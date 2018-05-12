@@ -1,0 +1,22 @@
+{
+  "name": "bertie-botts",
+  "version": "1.0.0",
+  "description": "Coverts YAML flavor data to JSON",
+  "main": "yml-to-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisbroski/bertie-botts.git"
+  },
+  "author": "Chris Broski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisbroski/bertie-botts/issues"
+  },
+  "homepage": "https://github.com/chrisbroski/bertie-botts#readme",
+  "dependencies": {
+    "js-yaml": "^3.11.0"
+  }
+}

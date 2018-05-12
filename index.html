@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Eat Bertie Bott's Every Flavor Beans</title>
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Henny+Penny" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+
+<body>
+
+<header></header>
+
+<article>
+
+<section>
+<h4>✴ Appendix <abbr>i</abbr> ✴</h4>
+<h1>Bertie Bott's Every<br>Flavor Beans</h1>
+
+<h5>Choose a bean, if you dare!</h5>
+<p><button onclick="eat()">Eat a bean</button><p>
+<p id="bean"></p>
+<p id="bean-desc"></p>
+
+</section>
+
+</article>
+
+<script>
+var data, xhr = new XMLHttpRequest(), flavors;
+xhr.open("GET", "flavors.json");
+xhr.onload = function (e) {
+    data = JSON.parse(xhr.response);
+    flavors = data.flavors.length;
+};
+xhr.send();
+
+Array.prototype.random = function () {
+    return this[Math.floor(Math.random() * this.length)];
+};
+
+function eat() {
+    var chosen = data.flavors.random(), beanName, beanObj, beanDesc, totalFlavor;
+    beanName = Object.keys(chosen)[0];
+    beanObj = chosen[Object.keys(chosen)[0]];
+
+    document.getElementById("bean").textContent = "It tastes like… " + beanName + ".";
+    /*beanDesc = document.getElementById("bean-desc");
+    beanDesc.textContent = "";
+
+    if (beanObj.sweet > 1) {
+        beanDesc.textContent = "It's very sweet!";
+    }
+    if (beanObj.sour > 1) {
+        beanDesc.textContent = "Whoa that's sour!";
+    }
+    if (beanObj.hot > 1) {
+        beanDesc.textContent = "Ah, ah, ah, spicy!";
+    }
+    if (beanObj.putrid > 1) {
+        beanDesc.textContent = "Barf!";
+    }
+    totalFlavor = beanObj.sweet + beanObj.sour + beanObj.hot + beanObj.putrid + beanObj.salty + beanObj.savory + beanObj.bitter;
+
+    if (totalFlavor > 3) {
+        beanDesc.textContent = "It's quite flavourful.";
+    }
+
+    if (totalFlavor === 0) {
+        beanDesc.textContent = "So bland.";
+    }*/
+}
+
+</script>
