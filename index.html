@@ -9,13 +9,27 @@
 
 <body>
 
-<header></header>
+<header><h2>Bertie Bott's <span class="star">✶</span> Every Flavor Beans</h2></header>
 
 <article>
 
+<aside>
+<div id="close-mobile-menu">×</div>
+<h3>Hogwarts House</h3>
+<p>
+<select>
+    <option value="">None
+    <option value="gryffindor">Gryffindor
+    <option value="slytherin">Slytherin
+    <option value="ravenclaw">Ravenclaw
+    <option value="hufflepuff">Hufflepuff
+</select>
+</p>
+</aside>
+
 <section>
 <h4>✴ Appendix <abbr>i</abbr> ✴</h4>
-<h1>Bertie Bott's Every<br>Flavor Beans</h1>
+<h1>Eating Bertie Bott's</h1>
 
 <h5>Choose a bean, if you dare!</h5>
 <p><button onclick="eat()">Eat a bean</button><p>
@@ -71,4 +85,27 @@ function eat() {
     }*/
 }
 
+function setHouse() {
+    var className = location.hash,
+        html = document.querySelector("html");
+
+    if (className) {
+        html.className = className.slice(1);
+    } else {
+        html.className = "";
+    }
+}
+window.onhashchange = setHouse;
+window.onload = function () {
+    if (location.hash) {
+        document.querySelector("select").value = location.hash.slice(1);
+    }
+    setHouse();
+}
+document.querySelector("select").onchange = function () {
+    location.href = "#" + this.value;
+};
+document.querySelector("select").onchange = function () {
+    location.href = "#" + this.value;
+};
 </script>

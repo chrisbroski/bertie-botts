@@ -1338,14 +1338,6 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- honeycrisp apple:
-    sweet: 1
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
 - jonathan apple:
     sweet: 1
     sour: 1
@@ -2626,7 +2618,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
-- general tso's chicken:
+- General Tso's chicken:
     sweet: 0
     sour: 0
     salty: 1
@@ -2634,7 +2626,7 @@ flavors:
     savory: 2
     hot: 1
     putrid: 0
-- hunan chicken:
+- Hunan chicken:
     sweet: 0
     sour: 0
     salty: 1
@@ -3786,7 +3778,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  shrimp cocktail:
+-  prawn cocktail:
     sweet: 1
     sour: 0
     salty: 1
@@ -4426,7 +4418,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  vinegar:
+-  malt vinegar:
     sweet: 0
     sour: 2
     salty: 0
@@ -5380,6 +5372,774 @@ flavors:
     putrid: 0
 - turkish delite:
     sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- grass:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- pine cone:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+- chicken liver:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- lemon drop:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- dried apricot:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  capers:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  sausage and peppers:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+-  olive oil:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
+    hot: 0
+    putrid: 0
+-  limeade:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  cappuccino:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
+    hot: 0
+    putrid: 0
+-  hot buttered rum:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+-  irish coffee:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+-  mimosa:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  salsa:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+-  hot sauce:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 0
+-  brown sugar:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  lime daquiri:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  strawberry daquiri:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- chicken paprikash:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+-  white rice:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  brown rice:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  basmati rice:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  wild rice:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  chai tea:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+-  spanish rice:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+-  rice pilaf:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  pumpkin seed:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  sunflower seed:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  rye bread:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  millet:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  buckwheat pancakes:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  quinoa:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  chia seed:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  bean sprout:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  adzuki bean:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  fava bean:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  water chestnut:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  bamboo shoot:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  tobacco:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 1
+-  chocolate covered raisin:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+-  chocolate covered peanut:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  black-eyed peas:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  refried beans:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  minestrone:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  split pea soup:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  red bean paste:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  succotash:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  hasenpfeffer:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+-  Welsh rarebit:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+-  lobster thermidor:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+-  pesto sauce:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+-  garlic butter:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  bananas foster:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  apple cider:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  tomato soup:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  sun-dried tomato:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  tumeric:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  ginseng:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  lotus root:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  Jerusalem artichoke:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- potatoes au gratin:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  mayonnaise:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  rémoulade:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  sesame oil:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  maple syrup:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  red wine vinegar:
+    sweet: 0
+    sour: 2
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  white wine vinegar:
+    sweet: 0
+    sour: 2
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  apple cider vinegar:
+    sweet: 0
+    sour: 2
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  marmite:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+-  vegemite:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+-  Worcestershire sauce:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  bruschetta:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  vinaigrette:
+    sweet: 1
+    sour: 2
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  deviled eggs:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  candy cane:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  candy floss:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  sugared almonds:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+-  buttermilk:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  yogurt:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  radish:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  watercress:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  stuffed grape leaves:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  turnip greens:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  lemongrass:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+-  cabbage soup:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+-  corn tortilla:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  matzo ball soup:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  pumpernickel bread:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  crème fraîche:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  eggnog:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  whipped cream:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  yak butter:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  sautéed scallops:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  burned toast:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
+    hot: 0
+    putrid: 0
+- maraschino cherry:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- grenadine:
+    sweet: 2
     sour: 0
     salty: 0
     bitter: 0
