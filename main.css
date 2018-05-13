@@ -47,8 +47,14 @@ a, a:visited, .pseudoLink {
     text-decoration: underline;
     cursor: pointer;
 }
+fieldset {
+    padding: 10px 20px;
+    border: 0 none;
+}
+fieldset p {
+    margin: 10px 0;
+}
 button {
-    margin: 0 0 16px;
     padding: 6px 12px;
     font-family: 'EB Garamond';
     font-size: 20px;
@@ -128,7 +134,7 @@ section {
         inset -3px -3px 64px rgba(147, 62, 0, 0.3);
 }
 section h1 {
-    margin: 0 0 3em;
+    margin: 0 0 2em;
     text-align: center;
     letter-spacing: 0.3em;
 }
