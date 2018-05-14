@@ -522,7 +522,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 2
-- salmon:
+- grilled salmon:
     sweet: 0
     sour: 0
     salty: 1
@@ -1778,7 +1778,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
-- chipotle:
+- chipotle pepper:
     sweet: 0
     sour: 1
     salty: 1
@@ -3802,7 +3802,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  crawfish:
+-  boiled crawfish:
     sweet: 0
     sour: 0
     salty: 1
@@ -4026,7 +4026,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  black forest gateau:
+-  black forest gâteau:
     sweet: 2
     sour: 1
     salty: 0
@@ -4402,7 +4402,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  chocolate gateau:
+-  chocolate gâteau:
     sweet: 2
     sour: 0
     salty: 0
@@ -4626,7 +4626,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  battered, fried, onion ring:
+-  battered fried onion ring:
     sweet: 0
     sour: 0
     salty: 1
@@ -6144,6 +6144,38 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+-  Dijon mustard:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+-  honey mustard:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  fried rice:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+-  lo mein:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 # -  food:
