@@ -140,7 +140,7 @@ section h1 {
 }
 section h4 {
     margin: 0 0 1em;
-    letter-spacing: 1.2em;
+    letter-spacing: 1.1em;
     text-align: center;
     font-size: 14px;
 }
@@ -179,3 +179,17 @@ aside #close-mobile-menu+h3 {
 aside h5 {margin: 0; font-size: 13px; }
 aside p {letter-spacing: 0.1em; font-size: 14px; margin: 0; }
 aside p b {font-family: "Henny Penny", sans-serif; padding-right: 4px; }
+
+/* Mobile layout */
+@media (max-width: 530px) {
+    header h2 {font-size: 10px; padding: 6px 24px 0; white-space: nowrap; }
+    article section h4 {font-size: 12px; }
+    article section p {text-align: left; }
+    aside {
+        display: none;
+    }
+    section {
+        box-shadow: 0 0 0;
+        border-right: 0 none;
+    }
+}

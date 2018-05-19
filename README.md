@@ -1,7 +1,6 @@
 # bertie-botts
-A data collection of every flavor
 
-Working demo at https://chrisbroski.github.io/bertie-botts/
+Pick a random flavor at: https://chrisbroski.github.io/bertie-botts/
 
 > "You want to be careful with those," Ron warned Harry. "When they say every flavor, they mean every flavor - you know, you get all the ordinary ones like chocolate and peppermint and marmalade, but then you can get spinach and liver and tripe. George reckons he had a booger-flavored one once."
 >
