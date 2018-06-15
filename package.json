@@ -4,6 +4,7 @@
   "description": "Coverts YAML flavor data to JSON",
   "main": "yml-to-json.js",
   "scripts": {
+    "start": "node yml-to-json.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,6 @@
   },
   "homepage": "https://github.com/chrisbroski/bertie-botts#readme",
   "dependencies": {
-    "js-yaml": "^3.11.0"
+    "js-yaml": "latest"
   }
 }
