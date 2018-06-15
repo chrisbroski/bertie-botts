@@ -2202,7 +2202,7 @@ flavors:
     savory: 2
     hot: 1
     putrid: 0
-- prosciutto:
+- prosciutto di Pamra:
     sweet: 0
     sour: 0
     salty: 1
@@ -4162,7 +4162,15 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  firewhiskey:
+-  firewhisky:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 2
+    putrid: 0
+-  Ogden's Old firewhisky:
     sweet: 0
     sour: 0
     salty: 0
@@ -6146,7 +6154,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  Dijon mustard:
+- Dijon mustard:
     sweet: 0
     sour: 0
     salty: 1
@@ -6154,7 +6162,7 @@ flavors:
     savory: 1
     hot: 1
     putrid: 0
--  honey mustard:
+- honey mustard:
     sweet: 1
     sour: 0
     salty: 1
@@ -6162,7 +6170,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  fried rice:
+- fried rice:
     sweet: 0
     sour: 0
     salty: 1
@@ -6170,13 +6178,205 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  lo mein:
+- lo mein:
     sweet: 0
     sour: 0
     salty: 1
     bitter: 0
     savory: 1
     hot: 0
+    putrid: 0
+- alfalfa sprouts:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 01
+    savory: 0
+    hot: 0
+    putrid: 0
+- gin:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
+    hot: 1
+    putrid: 0
+- owl treat:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- toffee éclair:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- whelk:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- egg on toast:
+    sweet: 0
+    sour: 0
+    salty:
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- roast pheasant:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- dragon steak:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- milk:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- cherry syrup and soda:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- pineapple juice:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- pomegranate juice:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- Dragon Barrel brandy:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 0
+- red currant rum:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 0
+- rum:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 0
+- nettle wine:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- elf-made wine:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- elderflower wine:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- celery and beetroot wine:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- beetle berry whisky:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 2
+    putrid: 0
+- Blishen's firewhisky:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 2
+    putrid: 0
+- chocolate liquer:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- Gamp's Old Gregarious beer:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 2
+    savory: 0
+    hot: 0
+    putrid: 2
+- Italian Vermouth Bianco:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
     putrid: 0
 # -  food:
 #     sweet: 0
