@@ -12,4 +12,12 @@ Pick a random flavor at: https://chrisbroski.github.io/bertie-botts/
 
 The list of specific flavors in the the canon of Harry Potter is small, but the implications are that the vast majority are left to the imagination of the reader. This project is about creating a simulation of what each flavor might be.
 
+## Flavor Types
+
+Flavor qualities have a value of 0 to 2
+
+    0 - None
+    1 - Some
+    2 - Lots
+
 Have ideas for more flavors? [Create an issue](https://github.com/chrisbroski/bertie-botts/issues) with any suggestions.

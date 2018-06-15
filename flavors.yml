@@ -578,7 +578,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- sprout:
+- sprouts:
     sweet: 0
     sour: 0
     salty: 0
