@@ -31,21 +31,20 @@
 <h4>✶ Appendix <abbr>i</abbr> ✶</h4>
 <h1>Eating Bertie Bott's</h1>
 
-<p>Choose a bean, if you dare!</p>
+<main>
+<p>You open a bag of Bertie Bott's every flavor beans</p>
+</main>
 
 <fieldset>
-    <p><button onclick="eat()">Eat a bean</button><p>
+    <p><button onclick="eat()">Eat a bean</button></p>
 </fieldset>
-
-<p id="bean"></p>
-<p id="bean-desc"></p>
 
 </section>
 
 </article>
 
 <script>
-var data, xhr = new XMLHttpRequest(), flavors;
+var data, xhr = new XMLHttpRequest(), flavors, lineCount = 0;
 xhr.open("GET", "flavors.json");
 xhr.onload = function (e) {
     data = JSON.parse(xhr.response);
@@ -58,11 +57,44 @@ Array.prototype.random = function () {
 };
 
 function eat() {
-    var chosen = data.flavors.random(), beanName, beanObj, beanDesc, totalFlavor;
+    var chosen = data.flavors.random(), beanName, beanObj, beanDesc, totalFlavor, p, main, text;
     beanName = Object.keys(chosen)[0];
     beanObj = chosen[Object.keys(chosen)[0]];
 
-    document.getElementById("bean").textContent = "It tastes like… " + beanName + ".";
+    main = document.querySelector("main");
+
+    if (lineCount === 0) {
+        p = document.querySelector("main p");
+        text = "You open a bag of Bertie Bott's every flavor beans. Closing your eyes, you pick one at random";
+        p.textContent = text;
+    }
+    text = ". It tastes like "
+    if (lineCount === 1) {
+        p = document.querySelector("main p");
+        text = document.createTextNode(". You dare to try another");
+        p.appendChild(text);
+        text = ". This one tastes like ";
+    }
+    if (lineCount === 2) {
+        p = document.createElement("p");
+        p.textContent = "Undeterred, you continue to dig into the bag";
+        main.appendChild(p);
+        text = ". The next one tastes like "
+    }
+    if (lineCount === 3) {
+        text = ". You taste beans the flavor of ";
+    }
+    if (lineCount > 3) {
+        text = ", ";
+    }
+    p = document.querySelector("main p:last-child");
+    text = document.createTextNode(text + beanName);
+    p.appendChild(text);
+
+    document.querySelector("fieldset").scrollIntoView(false);
+    lineCount += 1;
+    //main.scrollTo(0, main.innerHeight);
+    // document.getElementById("bean").textContent = "It tastes like… " + beanName + ".";
     /*beanDesc = document.getElementById("bean-desc");
     beanDesc.textContent = "";
 
