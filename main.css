@@ -51,8 +51,9 @@ fieldset {
     padding: 10px 20px 140px;
     border: 0 none;
 }
-fieldset p {
-    margin: 10px 0;
+section fieldset p {
+    text-indent: 0;
+    margin: 20px 0;
 }
 button {
     padding: 6px 12px;
@@ -185,6 +186,10 @@ aside h3 {
 }
 aside #close-mobile-menu+h3 {
     margin-top: 0;
+}
+
+#eat, #play {
+    display: none;
 }
 
 aside h5 {margin: 0; font-size: 13px; }

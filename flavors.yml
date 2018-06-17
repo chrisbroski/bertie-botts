@@ -976,7 +976,7 @@ flavors:
     hot: 0
     putrid: 0
 - jackfruit:
-    sweet: 1
+    sweet: 2
     sour: 0
     salty: 0
     bitter: 0
@@ -2925,6 +2925,14 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- roasted camel:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 1
 
 # Snacks
 - chips:
@@ -3210,6 +3218,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+- Sardinian maggot cheese:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 2
 
 # Cheese dishes
 - cheese nacho:
@@ -4489,9 +4505,17 @@ flavors:
     sour: 0
     salty: 1
     bitter: 0
-    savory: 2
+    savory: 1
     hot: 0
     putrid: 1
+- Icelandic fermented shark:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 2
 
 # Desserts
 - macaron:
@@ -4513,7 +4537,7 @@ flavors:
 - caramel:
     sweet: 2
     sour: 0
-    salty: 0
+    salty: 1
     bitter: 0
     savory: 0
     hot: 0
@@ -5570,7 +5594,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- apple crist:
+- apple crisp:
     sweet: 2
     sour: 1
     salty: 0
@@ -5778,14 +5802,6 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- ice mice:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
 - nougat:
     sweet: 2
     sour: 0
@@ -5859,7 +5875,7 @@ flavors:
     hot: 0
     putrid: 0
 - turkish delite:
-    sweet: 0
+    sweet: 2
     sour: 0
     salty: 0
     bitter: 0
@@ -6218,7 +6234,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- sesame oil:
+- toasted sesame oil:
     sweet: 0
     sour: 0
     salty: 0
@@ -6377,7 +6393,7 @@ flavors:
     bitter: 0
     savory: 1
     hot: 0
-    putrid: 0
+    putrid: 1
 - burned toast:
     sweet: 0
     sour: 0
