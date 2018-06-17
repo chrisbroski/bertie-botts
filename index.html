@@ -39,7 +39,7 @@
         <button onclick="end()">I've had enough</button>
     </p>
     <p id="open"><button onclick="openBag()">Open the box</button></p>
-    <p id="play"><button onclick="play()">Play as a new student.</button></p>
+    <p id="play"><button onclick="play()">Read about another student.</button></p>
 </fieldset>
 
 </section>
@@ -151,10 +151,29 @@ function desc(flavor) {
     return ". Meh";
 }
 
+function typewrite(text) {
+    var p = document.querySelector("main p:last-child");
+    var text;
+    var buttons = document.querySelectorAll("#eat button");
+
+    if (!text) {
+        buttons[0].disabled = false;
+        buttons[1].disabled = false;
+    } else {
+        p.appendChild(document.createTextNode(text.slice(0, 1)));
+        window.setTimeout(
+            function () {
+                typewrite(text.slice(1))
+            }, 30
+        );
+    }
+}
+
 function appendP(text) {
-    p = document.querySelector("main p:last-child");
-    text = document.createTextNode(text);
-    p.appendChild(text);
+    var buttons = document.querySelectorAll("#eat button");
+    buttons[0].disabled = true;
+    buttons[1].disabled = true;
+    typewrite(text);
 }
 
 function chooseBean() {
@@ -165,7 +184,7 @@ function chooseBean() {
 
 function write(flavor) {
     var beanName = Object.keys(flavor)[0],
-        putrid = flavor[beanName].putrid
+        putrid = flavor[beanName].putrid,
         main = document.querySelector("main"),
         p,
         text = ". It tasted like ",
