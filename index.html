@@ -49,12 +49,11 @@ var data, xhr = new XMLHttpRequest(), lineCount = 0, chosen = [], beanCount = 20
 xhr.open("GET", "flavors.json");
 xhr.onload = function (e) {
     data = JSON.parse(xhr.response);
+
     var xhr2 = new XMLHttpRequest();
     xhr2.open("GET", "names.json");
-    console.log("get names");
     xhr2.onload = function (e2) {
         data.names = JSON.parse(xhr2.response);
-        console.log(data.names);
         play();
         document.getElementById("open").style.display = "inline-block";
     }
@@ -71,33 +70,6 @@ function total(flavor) {
     return Object.keys(tastes).reduce(function (a, b) {
         return a + tastes[b];
     }, 0);
-}
-
-function descOld(flavor) {
-    var tastes = flavor[Object.keys(flavor)[0]];
-    var tot = total(flavor);
-    if (tastes.putrid > 1) {
-        return ("barf " + tot);
-    }
-    if (tastes.hot > 1) {
-        return ("hot! " + tot);
-    }
-    if (tastes.sweet > 1) {
-        return ("sweet " + tot);
-    }
-    if (tastes.sour > 1) {
-        return ("sour " + tot);
-    }
-    if (tastes.bitter > 1) {
-        return ("bitter " + tot);
-    }
-    if (tastes.sour > 1) {
-        return ("sour " + tot);
-    }
-    if (tastes.savory > 1) {
-        return ("savory " + tot);
-    }
-    return "normal " + tot
 }
 
 function desc(flavor) {
@@ -193,7 +165,7 @@ function write(flavor) {
         putrid = flavor[beanName].putrid
         main = document.querySelector("main"),
         p,
-        text = ". It tastes like ",
+        text = ". It tasted like ",
         description = desc(flavor);
 
     if (lineCount >= beanCount - 1) {
@@ -210,8 +182,6 @@ function write(flavor) {
         return;
     }
     if (lineCount === 0) {
-        // p = document.querySelector("main p");
-        // p.appendChild(document.createTextNode(". Then closing " + possessive() + " eyes, " + pronoun() + " pick one at random"));
         text = ". The first bean tasted like "
     }
     if (lineCount === 1) {
@@ -247,37 +217,11 @@ function write(flavor) {
             document.getElementById("play").style.display = "inline-block";
         }, 1000);
     } else {
-        appendP(text + beanName + description);// + " (" + desc(flavor) + ")");
+        appendP(text + beanName + description);
     }
 
     document.querySelector("fieldset").scrollIntoView(false);
     lineCount += 1;
-    //main.scrollTo(0, main.innerHeight);
-    // document.getElementById("bean").textContent = "It tastes like… " + beanName + ".";
-    /*beanDesc = document.getElementById("bean-desc");
-    beanDesc.textContent = "";
-
-    if (beanObj.sweet > 1) {
-        beanDesc.textContent = "It's very sweet!";
-    }
-    if (beanObj.sour > 1) {
-        beanDesc.textContent = "Whoa that's sour!";
-    }
-    if (beanObj.hot > 1) {
-        beanDesc.textContent = "Ah, ah, ah, spicy!";
-    }
-    if (beanObj.putrid > 1) {
-        beanDesc.textContent = "Barf!";
-    }
-    totalFlavor = beanObj.sweet + beanObj.sour + beanObj.hot + beanObj.putrid + beanObj.salty + beanObj.savory + beanObj.bitter;
-
-    if (totalFlavor > 3) {
-        beanDesc.textContent = "It's quite flavourful.";
-    }
-
-    if (totalFlavor === 0) {
-        beanDesc.textContent = "So bland.";
-    }*/
 }
 
 function pronoun(capitalize) {
