@@ -48,7 +48,7 @@
 
 
 <script>
-var data, xhr = new XMLHttpRequest(), lineCount = 0, chosen = [], beanCount = 20, student = {};
+var data, xhr = new XMLHttpRequest(), lineCount = 0, chosen = [], beanCount = 10, student = {};
 xhr.open("GET", "flavors.json");
 xhr.onload = function (e) {
     data = JSON.parse(xhr.response);
@@ -78,7 +78,7 @@ function total(flavor) {
 function desc(flavor) {
     var tastes = flavor[Object.keys(flavor)[0]];
     var tot = total(flavor);
-    console.log(total);
+
     if (tastes.putrid > 1) {
         return ". It was the worst thing " + pronoun() + "'d even tasted";
     }
@@ -152,27 +152,30 @@ function desc(flavor) {
 }
 
 function typewrite(text) {
-    var p = document.querySelector("main p:last-child");
-    var text;
-    var buttons = document.querySelectorAll("#eat button");
+    var p = document.querySelector("main p:last-child"), ii;
+    var buttons = document.querySelectorAll("fieldset button");
 
     if (!text) {
-        buttons[0].disabled = false;
-        buttons[1].disabled = false;
+        for (ii = 0; ii < buttons.length; ii += 1) {
+            buttons[ii].disabled = false;
+        }
+        // document.querySelector("fieldset").scrollIntoView(false);
     } else {
         p.appendChild(document.createTextNode(text.slice(0, 1)));
         window.setTimeout(
             function () {
-                typewrite(text.slice(1))
+                typewrite(text.slice(1));
+                document.querySelector("fieldset").scrollIntoView(false);
             }, 30
         );
     }
 }
 
-function appendP(text) {
-    var buttons = document.querySelectorAll("#eat button");
-    buttons[0].disabled = true;
-    buttons[1].disabled = true;
+function startwriting(text) {
+    var buttons = document.querySelectorAll("fieldset button"), ii;
+    for (ii = 0; ii < buttons.length; ii += 1) {
+        buttons[ii].disabled = true;
+    }
     typewrite(text);
 }
 
@@ -192,32 +195,26 @@ function write(flavor) {
 
     if (lineCount >= beanCount - 1) {
         p = document.createElement("p");
-        p.textContent = "The last bean in the box was " + beanName + "-flavored" + description + ". " + student.given + " looked forward to eating more";
         main.appendChild(p);
+        startwriting("The last bean in the box was " + beanName + "-flavored" + description + ". " + student.given + " looked forward to eating more");
+
         document.getElementById("open").style.display = "none";
         document.getElementById("eat").style.display = "none";
-
-        window.setTimeout(function () {
-            document.getElementById("play").style.display = "inline-block";
-            document.querySelector("fieldset").scrollIntoView(false);
-        }, 1000);
-        document.querySelector("fieldset").scrollIntoView(false);
+        document.getElementById("play").style.display = "inline-block";
         return;
     }
     if (lineCount === 0) {
         text = ". The first bean tasted like "
     }
     if (lineCount === 1) {
-        p = document.querySelector("main p");
-        text = document.createTextNode(". " + student.given + " dared to try another");
-        p.appendChild(text);
-        text = ". This one tasted like ";
+        //startwriting(". " + student.given + " dared to try another");
+        text = ". " + student.given + " dared to try another. This one tasted like ";
     }
     if (lineCount === 2) {
         p = document.createElement("p");
-        p.textContent = "Undeterred, " + pronoun() + " dug into the box again";
         main.appendChild(p);
-        text = ". The next one tasted like "
+        // startwriting("Undeterred, " + pronoun() + " dug into the box again");
+        text = "Undeterred, " + pronoun() + " dug into the box again. The next one tasted like "
     }
     if (lineCount === 3) {
         text = ". " + student.given + " tasted beans the flavor of ";
@@ -232,18 +229,17 @@ function write(flavor) {
     }
     if (putrid > 1) {
         p = document.createElement("p");
-        p.textContent = "Ugh! That one was " + beanName + "-flavored. " + student.given + " spit it out and is done eating Bertie Bott's for a long while";
         main.appendChild(p);
+
+        startwriting("Ugh! That one was " + beanName + "-flavored. " + student.given + " spit it out and is done eating Bertie Bott's for a long while")
+
         document.getElementById("open").style.display = "none";
         document.getElementById("eat").style.display = "none";
-        window.setTimeout(function () {
-            document.getElementById("play").style.display = "inline-block";
-        }, 1000);
+        document.getElementById("play").style.display = "inline-block";
     } else {
-        appendP(text + beanName + description);
+        startwriting(text + beanName + description);
     }
 
-    document.querySelector("fieldset").scrollIntoView(false);
     lineCount += 1;
 }
 
@@ -276,23 +272,14 @@ function possessive(capitalize) {
 function openBag() {
     document.getElementById("open").style.display = "none";
     document.getElementById("eat").style.display = "inline-block";
-    appendP(". " + pronoun(true) + " opened the box and searched for the most delicious-looking color");
-    document.querySelector("fieldset").scrollIntoView(false);
+    startwriting(". " + pronoun(true) + " opened the box and searched for the most delicious-looking color");
 }
 
 function end() {
-    var p = document.createElement("p"),
-        main = document.querySelector("main");
-    p.textContent = student.given +  " closed the box. Maybe " + pronoun() + "'ll try more later";
-    main.appendChild(p);
+    startwriting(student.given +  " closed the box. Maybe " + pronoun() + "'ll try more later");
     document.getElementById("open").style.display = "none";
     document.getElementById("eat").style.display = "none";
-
-    window.setTimeout(function () {
-        document.getElementById("play").style.display = "inline-block";
-        document.querySelector("fieldset").scrollIntoView(false);
-    }, 1000);
-    document.querySelector("fieldset").scrollIntoView(false);
+    document.getElementById("play").style.display = "inline-block";
 }
 
 function play() {
