@@ -122,9 +122,6 @@ function desc(flavor) {
     if (tastes.hot > 0) {
         return ". It was mildly spicy";
     }
-    if (tastes.sweet > 0) {
-        return ". It was mildly sweet";
-    }
     if (tastes.sour > 0) {
         return ". It was a bit tart";
     }
@@ -133,6 +130,9 @@ function desc(flavor) {
     }
     if (tastes.savory > 0) {
         return ". It was not bad";
+    }
+    if (tastes.sweet > 0) {
+        return ". It was mildly sweet";
     }
     if (tastes.salty > 0) {
         return ". Salty";
@@ -177,6 +177,7 @@ function write(flavor) {
 
         window.setTimeout(function () {
             document.getElementById("play").style.display = "inline-block";
+            document.querySelector("fieldset").scrollIntoView(false);
         }, 1000);
         document.querySelector("fieldset").scrollIntoView(false);
         return;
@@ -254,6 +255,7 @@ function openBag() {
     document.getElementById("open").style.display = "none";
     document.getElementById("eat").style.display = "inline-block";
     appendP(". " + pronoun(true) + " opened the box to search for the most delicious-looking color");
+    document.querySelector("fieldset").scrollIntoView(false);
 }
 
 function play() {

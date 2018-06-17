@@ -208,4 +208,7 @@ aside p b {font-family: "Henny Penny", sans-serif; padding-right: 4px; }
         box-shadow: 0 0 0;
         border-right: 0 none;
     }
+    fieldset {
+        padding-bottom: 20px;
+    }
 }
