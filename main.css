@@ -151,7 +151,9 @@ section p {
     text-align: justify;
     text-indent: 1em;
 }
-
+article main p:first-child {
+    text-indent: 0;
+}
 article main p:first-child:first-letter {
     font-family: 'Henny Penny', sans-serif;
     font-size: 48px;

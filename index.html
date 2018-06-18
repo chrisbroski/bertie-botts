@@ -270,7 +270,8 @@ function openBag() {
 }
 
 function end() {
-    startwriting(". " + student.given +  " closed the box. Maybe " + pronoun() + "'ll try more later");
+    document.querySelector("main").appendChild(document.createElement("p"));
+    startwriting(student.given +  " closed the box. Maybe " + pronoun() + "'ll try more later");
     showHideButtons("play");
 }
 
