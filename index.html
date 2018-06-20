@@ -53,7 +53,8 @@ var data,
     lineCount = 0,
     beanCount = 20,
     student = {},
-    sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"};
+    sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
+    gem;
 
 xhr.open("GET", "flavors.json");
 xhr.onload = function (e) {
@@ -74,9 +75,15 @@ Array.prototype.rand = function () {
     return this[Math.floor(Math.random() * this.length)];
 };
 
+Array.prototype.gem = function () {
+    return this[Math.floor(gem() * this.length)];
+};
+
 String.prototype.format = function () {
     var pattern = /\{\d+\}/g, args = arguments;
-    return this.replace(pattern, function (capture) {return args[capture.match(/\d+/)]; });
+    return this.replace(pattern, function (capture) {
+        return args[capture.match(/\d+/)];
+    });
 };
 
 String.prototype.capitalize = function () {
@@ -85,6 +92,25 @@ String.prototype.capitalize = function () {
     }
     return this.slice(0, 1).toUpperCase() + this.slice(1);
 };
+
+// https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript-jquery#answer-7616484
+// http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
+function hashCode(str) {
+    return str.split("").reduce(function (a, b) {
+        return ((a << 5) - a) + b.charCodeAt(0);
+    }, 0);
+}
+
+// https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript#answer-47593316
+// https://en.wikipedia.org/wiki/Lehmer_random_number_generator
+function lrng(seed) {
+    function lcg(a) {
+        return a * 48271 % 2147483647;
+    }
+    return function() {
+        return (seed = lcg(seed)) / 2147483648;
+    };
+}
 
 function total(flavor) {
     var tastes = flavor[Object.keys(flavor)[0]]
@@ -265,7 +291,7 @@ function possessive(capitalize) {
     var pronouns = ["her", "his"];
 
     if (capitalize) {
-        return capitalizedPronouns[isMale()].capitalize();
+        return pronouns[isMale()].capitalize();
     }
     return pronouns[isMale()];
 }
@@ -292,6 +318,8 @@ function play() {
     beanCount = [10, 20, 20, 50, 100].rand();
     student.sur = data.names.sur.rand();
     student.given = data.names[student.gender].rand();
+
+    gem = lrng(hashCode(student.sur + student.given));
 
     main.innerHTML = "";
     lineCount = 0;
