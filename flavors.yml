@@ -2017,6 +2017,22 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+-  pinto bean:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  kidney bean:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
 
 # Herbs and spices
 - oregano:
@@ -3456,6 +3472,22 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- challah:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- foccacia:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 
 # Drinks
 - tea with milk and sugar:
@@ -4516,6 +4548,14 @@ flavors:
     savory: 2
     hot: 0
     putrid: 2
+- Fried Calamari:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 
 # Desserts
 - macaron:
@@ -4908,6 +4948,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
+    hot: 0
+    putrid: 0
+- s'mores:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
     hot: 0
     putrid: 0
 
@@ -6465,6 +6513,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 0
+    putrid: 0
+- cheese enchilada:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
     putrid: 0
 # -  food:
 #     sweet: 0
