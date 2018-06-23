@@ -2949,6 +2949,22 @@ flavors:
     savory: 2
     hot: 0
     putrid: 1
+- Chateaubriand:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- chicken shawarma:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 
 # Snacks
 - chips:
@@ -6521,6 +6537,22 @@ flavors:
     bitter: 0
     savory: 2
     hot: 1
+    putrid: 0
+- pasta puttanesca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- pasta carbonara:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
     putrid: 0
 # -  food:
 #     sweet: 0
