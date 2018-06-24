@@ -5,7 +5,7 @@ flavors:
 
 # flavors specifically mentioned in the books
 # from https://www.hp-lexicon.org/thing/bertie-botts-every-flavour-beans/
-- baked bean:
+- baked beans:
     sweet: 1
     sour: 0
     salty: 1
@@ -1865,7 +1865,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- green bean:
+- green beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -1873,7 +1873,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- lima bean:
+- lima beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -1881,7 +1881,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- garbonzo bean:
+- garbonzo beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -2017,7 +2017,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  pinto bean:
+-  pinto beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -2025,7 +2025,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  kidney bean:
+-  kidney beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -3438,7 +3438,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  deviled eggs:
+-  deviled egg:
     sweet: 0
     sour: 0
     salty: 1
@@ -3672,7 +3672,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
-    hot: 1
+    hot: 0
     putrid: 0
 - elderflower wine:
     sweet: 1
@@ -3680,7 +3680,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
-    hot: 1
+    hot: 0
     putrid: 0
 - celery and beetroot wine:
     sweet: 0
@@ -3689,7 +3689,7 @@ flavors:
     bitter: 0
     savory: 0
     hot: 1
-    putrid: 0
+    putrid: 1
 - beetle berry whisky:
     sweet: 0
     sour: 0
@@ -3777,6 +3777,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- Chianti:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
     putrid: 0
 
 # Pies
@@ -4622,7 +4630,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- croissant:
+- butter croissant:
     sweet: 1
     sour: 0
     salty: 0
@@ -6162,7 +6170,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- adzuki bean:
+- adzuki beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -6170,7 +6178,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- fava bean:
+- fava beans:
     sweet: 0
     sour: 0
     salty: 0
