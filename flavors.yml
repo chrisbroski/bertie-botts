@@ -2493,6 +2493,30 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- veal piccata:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- veal milanese:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- veal parmigiana:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 - chicken salad:
     sweet: 1
     sour: 0
@@ -2965,6 +2989,15 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- veal saltimbocca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+# end meat and meat dishes
 
 # Snacks
 - chips:
@@ -3502,6 +3535,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 2
+    hot: 0
+    putrid: 0
+- ciabatta:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 
