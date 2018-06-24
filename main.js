@@ -6,7 +6,7 @@ var data,
     beanCount = 20,
     student = {},
     sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
-    gem;
+    determine; // For deterministic "random"
 
 xhr.open("GET", "flavors.json");
 xhr.onload = function (e) {
@@ -27,25 +27,15 @@ Array.prototype.rand = function () {
     return this[Math.floor(Math.random() * this.length)];
 };
 
-Array.prototype.gem = function () {
-    return this[Math.floor(gem() * this.length)];
-};
-
-String.prototype.format = function () {
-    var pattern = /\{\d+\}/g, args = arguments;
-    return this.replace(pattern, function (capture) {
-        return args[capture.match(/\d+/)];
-    });
+Array.prototype.determine = function () {
+    return this[Math.floor(determine() * this.length)];
 };
 
 String.prototype.capitalize = function (cap) {
     if (!this) {
         return "";
     }
-    if (cap) {
-        return this.slice(0, 1).toUpperCase() + this.slice(1);
-    }
-    return this;
+    return (cap) ? this.slice(0, 1).toUpperCase() + this.slice(1) : this;
 };
 
 // https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript-jquery#answer-7616484
@@ -62,7 +52,10 @@ function lrng(seed) {
     function lcg(a) {
         return a * 48271 % 2147483647;
     }
-    return function() {
+    return function(peek) {
+        if (peek) {
+            return lcg(seed) / 2147483648;
+        }
         return (seed = lcg(seed)) / 2147483648;
     };
 }
@@ -171,7 +164,7 @@ function startwriting(text) {
 }
 
 function chooseBean() {
-    var flavor = data.flavors.rand();
+    var flavor = data.flavors.determine();
     write(flavor);
 }
 
@@ -260,7 +253,7 @@ function play() {
     student.sur = data.names.sur.rand();
     student.given = data.names[student.gender].rand();
 
-    gem = lrng(hashCode(student.sur + student.given));
+    determine = lrng(hashCode(student.sur + student.given));
 
     main.innerHTML = "";
     lineCount = 0;
