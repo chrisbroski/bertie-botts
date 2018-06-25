@@ -5,7 +5,7 @@ flavors:
 
 # flavors specifically mentioned in the books
 # from https://www.hp-lexicon.org/thing/bertie-botts-every-flavour-beans/
-- baked bean:
+- baked beans:
     sweet: 1
     sour: 0
     salty: 1
@@ -1865,7 +1865,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- green bean:
+- green beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -1873,7 +1873,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- lima bean:
+- lima beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -1881,7 +1881,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- garbonzo bean:
+- garbonzo beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -2010,6 +2010,22 @@ flavors:
     hot: 0
     putrid: 0
 -  Jerusalem artichoke:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  pinto beans:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+-  kidney beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -2477,6 +2493,30 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- veal piccata:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- veal milanese:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- veal parmigiana:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 - chicken salad:
     sweet: 1
     sour: 0
@@ -2933,6 +2973,31 @@ flavors:
     savory: 2
     hot: 0
     putrid: 1
+- Chateaubriand:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- chicken shawarma:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- veal saltimbocca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+# end meat and meat dishes
 
 # Snacks
 - chips:
@@ -3406,7 +3471,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  deviled eggs:
+-  deviled egg:
     sweet: 0
     sour: 0
     salty: 1
@@ -3456,7 +3521,38 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-
+- challah:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- foccacia:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- ciabatta:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- corn bread:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # Drinks
 - tea with milk and sugar:
     sweet: 0
@@ -3624,7 +3720,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
-    hot: 1
+    hot: 0
     putrid: 0
 - elderflower wine:
     sweet: 1
@@ -3632,7 +3728,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
-    hot: 1
+    hot: 0
     putrid: 0
 - celery and beetroot wine:
     sweet: 0
@@ -3641,7 +3737,7 @@ flavors:
     bitter: 0
     savory: 0
     hot: 1
-    putrid: 0
+    putrid: 1
 - beetle berry whisky:
     sweet: 0
     sour: 0
@@ -3729,6 +3825,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- Chianti:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
     putrid: 0
 
 # Pies
@@ -4516,6 +4620,14 @@ flavors:
     savory: 2
     hot: 0
     putrid: 2
+- Fried Calamari:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 
 # Desserts
 - macaron:
@@ -4566,7 +4678,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- croissant:
+- butter croissant:
     sweet: 1
     sour: 0
     salty: 0
@@ -4910,6 +5022,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- s'mores:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
 
 # Salads
 - ceasar salad:
@@ -5072,6 +5192,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- baked potato with sour cream and chives:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 - lasagne:
@@ -6098,7 +6226,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- adzuki bean:
+- adzuki beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -6106,7 +6234,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- fava bean:
+- fava beans:
     sweet: 0
     sour: 0
     salty: 0
@@ -6464,6 +6592,30 @@ flavors:
     salty: 1
     bitter: 0
     savory: 1
+    hot: 0
+    putrid: 0
+- cheese enchilada:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- pasta puttanesca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- pasta carbonara:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
     hot: 0
     putrid: 0
 # -  food:
