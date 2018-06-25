@@ -3545,7 +3545,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-
+- corn bread:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # Drinks
 - tea with milk and sugar:
     sweet: 0
@@ -5185,6 +5192,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- baked potato with sour cream and chives:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 - lasagne:

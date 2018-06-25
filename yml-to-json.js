@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 const yaml = require('js-yaml');
 const fs = require('fs');
 

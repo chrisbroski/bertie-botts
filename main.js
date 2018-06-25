@@ -6,6 +6,8 @@ var data,
     beanCount = 20,
     student = {},
     sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
+    low = 28,
+    high = 43,
     determine; // For deterministic "random"
 
 xhr.open("GET", "flavors.json");
@@ -23,12 +25,17 @@ xhr.onload = function (e) {
 };
 xhr.send();
 
+function rand(max) {
+    return Math.floor(Math.random() * max);
+}
+
 Array.prototype.rand = function () {
     return this[Math.floor(Math.random() * this.length)];
 };
 
 Array.prototype.determine = function () {
-    return this[Math.floor(determine() * this.length)];
+    var rslt = Math.abs(determine());
+    return this[Math.floor(rslt * this.length)];
 };
 
 String.prototype.capitalize = function (cap) {
@@ -164,13 +171,13 @@ function startwriting(text) {
 }
 
 function chooseBean() {
-    var flavor = data.flavors.determine();
-    write(flavor);
+    write(data.flavors.determine());
 }
 
 function write(flavor) {
     var beanName = Object.keys(flavor)[0],
         putrid = flavor[beanName].putrid,
+        hot = flavor[beanName].hot,
         main = document.querySelector("main"),
         text = ". It tasted like ",
         description = desc(flavor);
@@ -202,10 +209,18 @@ function write(flavor) {
         }
         description = "";
     }
-    if (putrid > 1) {
-        main.appendChild(document.createElement("p"));
 
-        startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} spit it out and is done eating Bertie Bott's for a long while`);
+    if (putrid > 1 || (student.attr.WD < low && (putrid > 0 || hot > 1))) {
+        if (document.querySelector("main p:last-child").textContent !== "") {
+            main.appendChild(document.createElement("p"));
+        }
+        if (student.attr.WD > high) {
+            startwriting(`Ugh! That one was ${beanName}-flavored. It will be a few days before ${student.given} is ready to eat Bertie Bott's again`);
+        } else if (student.attr.WD < low) {
+            startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} swears ${pronoun()} won't eat one ever again`);
+        } else {
+            startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} spit it out and is done eating Bertie Bott's for a long while`);
+        }
         showHideButtons("play");
     } else {
         startwriting(text + beanName + description);
@@ -234,8 +249,9 @@ function possessive(cap) {
 }
 
 function openBag() {
+    var adverb = (student.attr.WD < low) ? `nervously ` : "";
     showHideButtons("eat");
-    startwriting(`. ${pronoun(true)} opened the box and searched for the most delicious-looking color`);
+    startwriting(`. ${pronoun(true)} opened the box and ${adverb}searched for the most delicious-looking color`);
 }
 
 function end() {
@@ -244,21 +260,37 @@ function end() {
     showHideButtons("play");
 }
 
+function attVal() {
+    return Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 14) + Math.ceil(Math.random() * 15) + 4;
+}
+
 function play() {
     var p = document.createElement("p"),
-        main = document.querySelector("main");
+        main = document.querySelector("main"),
+        extra = "";
 
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
     student.sur = data.names.sur.rand();
     student.given = data.names[student.gender].rand();
+    student.attr = {};
+    student.attr.WD = attVal();
 
     determine = lrng(hashCode(student.sur + student.given));
 
     main.innerHTML = "";
     lineCount = 0;
     showHideButtons("open");
-    p.textContent = `${student.given} ${student.sur} looked up from ${possessive()} breakfast as delivery owls streamed through the windows of Hogwart's Great Hall. A large tawny landed on the table next to ${pronoun2()} and extended its leg. ${student.given} gently removed the package, then tore into the brown paper. Inside was a ${sizes[parseInt(beanCount, 10)]} box of ${beanCount} Bertie Bott's Every Flavor Beans`;
+
+    if (student.attr.WD < low) {
+        extra = `. ${pronoun(true)} was not a big fan, but felt obligated to try at least one`;
+    }
+
+    if (student.attr.WD > high) {
+        extra = `. Awesome! They are one of ${possessive()} favorite sweets`;
+    }
+
+    p.textContent = `${student.given} ${student.sur} looked up from ${possessive()} breakfast as delivery owls streamed through the windows of Hogwart's Great Hall. A large tawny landed on the table next to ${pronoun2()} and extended its leg. ${student.given} gently removed the package, then tore into the brown paper. Inside was a ${sizes[parseInt(beanCount, 10)]} box of ${beanCount} Bertie Bott's Every Flavor Beans${extra}`;
     main.appendChild(p);
 }
 
