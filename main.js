@@ -63,7 +63,9 @@ function lrng(seed) {
         if (peek) {
             return lcg(seed) / 2147483648;
         }
-        return (seed = lcg(seed)) / 2147483648;
+        seed = lcg(seed);
+        window.localStorage.setItem("seed", seed.toString(10));
+        return seed / 2147483648;
     };
 }
 
@@ -174,6 +176,13 @@ function chooseBean() {
     write(data.flavors.determine());
 }
 
+function isDisgusting(flavor) {
+    var putrid = flavor.putrid,
+        hot = flavor.hot,
+        determination = student.attr.WD;
+    return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
+}
+
 function write(flavor) {
     var beanName = Object.keys(flavor)[0],
         putrid = flavor[beanName].putrid,
@@ -210,7 +219,7 @@ function write(flavor) {
         description = "";
     }
 
-    if (putrid > 1 || (student.attr.WD < low && (putrid > 0 || hot > 1))) {
+    if (isDisgusting(flavor)) {
         if (document.querySelector("main p:last-child").textContent !== "") {
             main.appendChild(document.createElement("p"));
         }
@@ -264,10 +273,18 @@ function attVal() {
     return Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 14) + Math.ceil(Math.random() * 15) + 4;
 }
 
+function save() {
+    window.localStorage.setItem("gender", student.gender);
+    window.localStorage.setItem("sur", student.sur);
+    window.localStorage.setItem("given", student.given);
+    window.localStorage.setItem("attr", JSON.stringify(student.attr));
+}
+
 function play() {
     var p = document.createElement("p"),
         main = document.querySelector("main"),
-        extra = "";
+        extra = "",
+        fate;
 
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
@@ -276,7 +293,11 @@ function play() {
     student.attr = {};
     student.attr.WD = attVal();
 
-    determine = lrng(hashCode(student.sur + student.given));
+    save();
+
+    fate = hashCode(student.sur + student.given);
+    window.localStorage.setItem("fate", fate);
+    determine = lrng(fate);
 
     main.innerHTML = "";
     lineCount = 0;
