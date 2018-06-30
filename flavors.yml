@@ -2594,7 +2594,7 @@ flavors:
     hot: 0
     putrid: 0
 - General Tso's chicken:
-    sweet: 0
+    sweet: 1
     sour: 0
     salty: 1
     bitter: 0
@@ -3034,6 +3034,30 @@ flavors:
     hot: 0
     putrid: 0
 - veal saltimbocca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- Kung Pao chicken:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- Sichuan beef:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- beef chow fun:
     sweet: 0
     sour: 0
     salty: 1
@@ -3940,6 +3964,14 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- chrysanthemum tea:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # Drinks
 
 # Pies
@@ -4297,6 +4329,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 0
+    putrid: 0
+- hot and sour soup:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
     putrid: 0
 # Soups
 
@@ -4712,6 +4752,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+- Fried Calamari:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # Seafood
 
 # Desserts
@@ -4889,6 +4937,38 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- raspberry ripple ice cream:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- coconut ice cream:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- butterscotch ice cream:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- rocky road ice cream:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
     hot: 0
     putrid: 0
 - hot fudge sundae:
@@ -5308,6 +5388,46 @@ flavors:
     hot: 0
     putrid: 0
 - lemon mousse:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- lemon lime ice pop:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- grape ice pop:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- strawberry ice pop:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- tropical punch ice pop:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- orange ice pop:
     sweet: 2
     sour: 1
     salty: 0
@@ -6652,7 +6772,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- lo mein:
+- chow mein:
     sweet: 0
     sour: 0
     salty: 1
@@ -6692,6 +6812,22 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- spring roll:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- Chinese hundred-year egg:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # -  food:
 #     sweet: 0
 #     sour: 0
