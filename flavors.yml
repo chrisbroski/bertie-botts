@@ -820,8 +820,9 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+# Nuts and seeds
 
-# Various fruits from around the world
+# Fruits from around the world
 # https://en.wikipedia.org/wiki/List_of_culinary_fruits
 - apricot:
     sweet: 1
@@ -1447,6 +1448,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+# Fruits
 
 # vegetables
 - corn on the cobb:
@@ -2033,6 +2035,47 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- bean sprout:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- adzuki beans:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- fava beans:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- water chestnut:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- bamboo shoot:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+# Vegetables
 
 # Herbs and spices
 - oregano:
@@ -2251,6 +2294,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
+# Herbs and spices
 
 # Meats and meat dishes
 - ostrich steak:
@@ -2997,7 +3041,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
-# end meat and meat dishes
+# Meats and meat dishes
 
 # Snacks
 - chips:
@@ -3056,6 +3100,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+# Snacks
 
 # Cheeses
 # https://en.wikipedia.org/wiki/Cheese_Shop_sketch
@@ -3291,6 +3336,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 2
+# Cheeses
 
 # Cheese dishes
 - cheese nacho:
@@ -3325,6 +3371,15 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- cheese fondue:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+# Cheese dishes
 
 # Egg dishes
 - fried egg:
@@ -3479,6 +3534,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+# Egg dishes
 
 # Breads
 - baguette:
@@ -3553,8 +3609,10 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+# Breads
+
 # Drinks
-- tea with milk and sugar:
+- hot tea with milk and sugar:
     sweet: 0
     sour: 0
     salty: 0
@@ -3834,6 +3892,55 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- iced tea with lemon:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- port wine:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- sangria wine:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- margarita:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- lime daquiri:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- strawberry daquiri:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+# Drinks
 
 # Pies
 - apple pie:
@@ -3996,6 +4103,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+# Pies
 
 # Soups
 - chicken noodle soup:
@@ -4190,6 +4298,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+# Soups
 
 # Sandwiches
 - ham and cheese sandwich:
@@ -4400,40 +4509,15 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
-
-# Cake
-- pineapple upside-down cake:
-    sweet: 2
-    sour: 1
-    salty: 0
+- bacon, egg, and cheese sandwich:
+    sweet: 0
+    sour: 0
+    salty: 1
     bitter: 0
     savory: 1
     hot: 0
     putrid: 0
-- cinnamon roll:
-    sweet: 1
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 1
-    putrid: 0
-- birthday cake:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- doughnut:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
+# Sandwiches
 
 # Seafood
 - beer battered fish:
@@ -4628,8 +4712,41 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+# Seafood
 
 # Desserts
+- pineapple upside-down cake:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- cinnamon roll:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- birthday cake:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- doughnut:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
 - macaron:
     sweet: 2
     sour: 0
@@ -5030,6 +5147,175 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- peanut butter cookie:
+    sweet: 2
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- oatmeal raisin cookie:
+    sweet: 2
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- snickerdoodle cookie:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- date square:
+    sweet: 2
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- baked alaska:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- lemon poppy seed cake:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- ice cream cone:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- apple crisp:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- pumpkin cheesecake:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- baklava:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- tiramisu:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 1
+    hot: 0
+    putrid: 0
+- peach cobbler:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- apple crumble:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- blackberry and apple crumble:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- plum crumble:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- gooseberry crumble:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- rhubarb crumble:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- coconut cake:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- custard tart:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- chocolate mousse:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- lemon mousse:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+# Desserts
 
 # Salads
 - ceasar salad:
@@ -5176,6 +5462,66 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+# Salads
+
+# Pasta
+- linguine with clam sauce:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- tagliatelle bolognese:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- manicotti:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- cheese and spinach tortellini:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- lasagne:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- pasta puttanesca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- pasta carbonara:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+# Pasta
 
 # miscellaneous
 - cat food:
@@ -5195,14 +5541,6 @@ flavors:
     hot: 0
     putrid: 0
 - baked potato with sour cream and chives:
-    sweet: 0
-    sour: 1
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- lasagne:
     sweet: 0
     sour: 1
     salty: 1
@@ -5266,7 +5604,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- sugar:
+- cane sugar:
     sweet: 2
     sour: 0
     salty: 0
@@ -5347,14 +5685,6 @@ flavors:
     hot: 0
     putrid: 0
 - garlic bread:
-    sweet: 0
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- bacon, egg, and cheese sandwich:
     sweet: 0
     sour: 0
     salty: 1
@@ -5530,38 +5860,6 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
-- peanut butter cookie:
-    sweet: 2
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- oatmeal raisin cookie:
-    sweet: 2
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- snickerdoodle cookie:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- date square:
-    sweet: 2
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
 -  lemon bar:
     sweet: 2
     sour: 1
@@ -5672,166 +5970,6 @@ flavors:
     salty: 1
     bitter: 0
     savory: 1
-    hot: 0
-    putrid: 0
-- port wine:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- sangria wine:
-    sweet: 1
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- margarita:
-    sweet: 1
-    sour: 1
-    salty: 1
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- baked alaska:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- lemon poppy seed cake:
-    sweet: 2
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- ice cream cone:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- apple crisp:
-    sweet: 2
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- pumpkin cheesecake:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- baklava:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- tiramisu:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 1
-    savory: 1
-    hot: 0
-    putrid: 0
-- peach cobbler:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- apple crumble:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- blackberry and apple crumble:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- plum crumble:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- gooseberry crumble:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- rhubarb crumble:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- coconut cake:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- custard tart:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 0
-- chocolate mousse:
-    sweet: 2
-    sour: 0
-    salty: 0
-    bitter: 1
-    savory: 0
-    hot: 0
-    putrid: 0
-- lemon mousse:
-    sweet: 2
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
     hot: 0
     putrid: 0
 - salmon mousse:
@@ -6114,22 +6252,6 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- lime daquiri:
-    sweet: 1
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- strawberry daquiri:
-    sweet: 1
-    sour: 1
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
 - chicken paprikash:
     sweet: 0
     sour: 0
@@ -6211,46 +6333,6 @@ flavors:
     hot: 0
     putrid: 0
 - chia seed:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- bean sprout:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- adzuki beans:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- fava beans:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- water chestnut:
-    sweet: 0
-    sour: 0
-    salty: 0
-    bitter: 0
-    savory: 0
-    hot: 0
-    putrid: 0
-- bamboo shoot:
     sweet: 0
     sour: 0
     salty: 0
@@ -6602,15 +6684,7 @@ flavors:
     savory: 2
     hot: 1
     putrid: 0
-- pasta puttanesca:
-    sweet: 0
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 2
-    hot: 0
-    putrid: 0
-- pasta carbonara:
+- chicken and mushroom vol-au-vent:
     sweet: 0
     sour: 0
     salty: 1

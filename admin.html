@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Hogwarts Stories : Dev Tools</title>
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Henny+Penny" rel="stylesheet">
+<link href="main.css?7" rel="stylesheet">
+
+<body>
+
+<header><h2>Hogwarts Stories <span class="star">✶</span> Dev Tools</h2></header>
+
+<article>
+
+<aside></aside>
+
+<section>
+<h4>✶ Appendix <abbr>ii</abbr> ✶</h4>
+<h1>Dev Tools</h1>
+
+<main></main>
+
+<fieldset>
+    <lable><input id="seed"></label>
+    <lable><input id="gender"></label>
+    <lable><input id="sur"></label>
+    <lable><input id="given"></label>
+    <lable><input id="attr"></label>
+    <lable><input id="fate"></label>
+</fieldset>
+
+</section>
+
+</article>
+
+<script>
+var main = document.querySelector("main");
+document.querySelector("#seed").value = window.localStorage.getItem("seed");
+document.querySelector("#gender").value = window.localStorage.getItem("gender");
+document.querySelector("#sur").value = window.localStorage.getItem("sur");
+document.querySelector("#given").value = window.localStorage.getItem("given");
+document.querySelector("#attr").value = window.localStorage.getItem("attr");
+document.querySelector("#fate").value = window.localStorage.getItem("fate");
+</script>

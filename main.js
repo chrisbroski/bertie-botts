@@ -1,7 +1,6 @@
 /* jshint esversion: 6 */
 
 var data,
-    xhr = new XMLHttpRequest(),
     lineCount = 0,
     beanCount = 20,
     student = {},
@@ -9,21 +8,6 @@ var data,
     low = 28,
     high = 43,
     determine; // For deterministic "random"
-
-xhr.open("GET", "flavors.json");
-xhr.onload = function (e) {
-    data = JSON.parse(xhr.response);
-
-    var xhr2 = new XMLHttpRequest();
-    xhr2.open("GET", "names.json");
-    xhr2.onload = function (e2) {
-        data.names = JSON.parse(xhr2.response);
-        play();
-        document.getElementById("open").style.display = "inline-block";
-    };
-    xhr2.send();
-};
-xhr.send();
 
 function rand(max) {
     return Math.floor(Math.random() * max);
@@ -63,7 +47,9 @@ function lrng(seed) {
         if (peek) {
             return lcg(seed) / 2147483648;
         }
-        return (seed = lcg(seed)) / 2147483648;
+        seed = lcg(seed);
+        window.localStorage.setItem("seed", seed.toString(10));
+        return seed / 2147483648;
     };
 }
 
@@ -174,6 +160,13 @@ function chooseBean() {
     write(data.flavors.determine());
 }
 
+function isDisgusting(flavor) {
+    var putrid = flavor.putrid,
+        hot = flavor.hot,
+        determination = student.attr.WD;
+    return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
+}
+
 function write(flavor) {
     var beanName = Object.keys(flavor)[0],
         putrid = flavor[beanName].putrid,
@@ -210,7 +203,7 @@ function write(flavor) {
         description = "";
     }
 
-    if (putrid > 1 || (student.attr.WD < low && (putrid > 0 || hot > 1))) {
+    if (isDisgusting(flavor)) {
         if (document.querySelector("main p:last-child").textContent !== "") {
             main.appendChild(document.createElement("p"));
         }
@@ -264,10 +257,18 @@ function attVal() {
     return Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 14) + Math.ceil(Math.random() * 15) + 4;
 }
 
+function save() {
+    window.localStorage.setItem("gender", student.gender);
+    window.localStorage.setItem("sur", student.sur);
+    window.localStorage.setItem("given", student.given);
+    window.localStorage.setItem("attr", JSON.stringify(student.attr));
+}
+
 function play() {
     var p = document.createElement("p"),
         main = document.querySelector("main"),
-        extra = "";
+        extra = "",
+        fate;
 
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
@@ -276,7 +277,11 @@ function play() {
     student.attr = {};
     student.attr.WD = attVal();
 
-    determine = lrng(hashCode(student.sur + student.given));
+    save();
+
+    fate = hashCode(student.sur + student.given);
+    window.localStorage.setItem("fate", fate);
+    determine = lrng(fate);
 
     main.innerHTML = "";
     lineCount = 0;
@@ -290,7 +295,7 @@ function play() {
         extra = `. Awesome! They are one of ${possessive()} favorite sweets`;
     }
 
-    p.textContent = `${student.given} ${student.sur} looked up from ${possessive()} breakfast as delivery owls streamed through the windows of Hogwart's Great Hall. A large tawny landed on the table next to ${pronoun2()} and extended its leg. ${student.given} gently removed the package, then tore into the brown paper. Inside was a ${sizes[parseInt(beanCount, 10)]} box of ${beanCount} Bertie Bott's Every Flavor Beans${extra}`;
+    p.textContent = `${student.given} ${student.sur} looked up from ${possessive()} breakfast as delivery owls streamed through the windows of Hogwart's Great Hall. A large tawny landed next to ${pronoun2()} and extended its leg. ${student.given} gently removed the package, then tore into the brown paper. Inside was a ${sizes[parseInt(beanCount, 10)]} box of ${beanCount} Bertie Bott's Every Flavor Beans${extra}`;
     main.appendChild(p);
 }
 
@@ -302,10 +307,27 @@ function setHouse() {
 }
 window.onhashchange = setHouse;
 window.onload = function () {
+    var xhr = new XMLHttpRequest();
+
     if (location.hash) {
         document.querySelector("select").value = location.hash.slice(1);
     }
     setHouse();
+
+    xhr.open("GET", "flavors.json");
+    xhr.onload = function () {
+        data = JSON.parse(xhr.response);
+
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open("GET", "names.json");
+        xhr2.onload = function () {
+            data.names = JSON.parse(xhr2.response);
+            play();
+            document.getElementById("open").style.display = "inline-block";
+        };
+        xhr2.send();
+    };
+    xhr.send();
 };
 document.querySelector("select").onchange = function () {
     location.href = "#" + this.value;
