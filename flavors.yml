@@ -1128,10 +1128,10 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- plantain banana:
-    sweet: 0
+- fried plantain banana:
+    sweet: 1
     sour: 0
-    salty: 0
+    salty: 1
     bitter: 0
     savory: 1
     hot: 0
@@ -1827,14 +1827,6 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
-- chipotle pepper:
-    sweet: 0
-    sour: 1
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 1
-    putrid: 0
 - arugula:
     sweet: 0
     sour: 0
@@ -2075,6 +2067,14 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- wheat grass:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
 # Vegetables
 
 # Herbs and spices
@@ -2294,6 +2294,30 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
+- paprika:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+- smoked paprika:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- white pepper:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 2
+    putrid: 1
 # Herbs and spices
 
 # Meats and meat dishes
@@ -4338,6 +4362,14 @@ flavors:
     savory: 1
     hot: 1
     putrid: 0
+- seafood gumbo:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
 # Soups
 
 # Sandwiches
@@ -4557,6 +4589,22 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- lobster roll:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- po' boy sandwich:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # Sandwiches
 
 # Seafood
@@ -4656,7 +4704,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- oyster:
+- raw oyster:
     sweet: 0
     sour: 0
     salty: 1
@@ -4672,6 +4720,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- steamed clams:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 - crab legs:
     sweet: 1
     sour: 0
@@ -4753,6 +4809,46 @@ flavors:
     hot: 0
     putrid: 1
 - Fried Calamari:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- oysters rockefeller:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- crab cake:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- oyster stew:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- monkfish:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- conch fritter:
     sweet: 0
     sour: 0
     salty: 1
@@ -6828,6 +6924,70 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+- seaweed salad:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- sea urchin:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- green beans amandine:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- caramelized onion:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- peruvian ceviche:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- pickled cherry peppers:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 1
+- habenero pepper:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 2
+    putrid: 0
+- chipotle peppers in adobo sauce:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 2
+    putrid: 0
 # -  food:
 #     sweet: 0
 #     sour: 0
