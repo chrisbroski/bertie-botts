@@ -3089,6 +3089,14 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- Christmas goose:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 # Meats and meat dishes
 
 # Snacks
@@ -3108,7 +3116,15 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- preztel:
+- pretzel rod:
+    sweet: 0
+    sour: 0
+    salty: 2
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- soft pretzel:
     sweet: 0
     sour: 0
     salty: 2
@@ -3657,6 +3673,22 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- pita bread:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- matzo:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
 # Breads
 
 # Drinks
@@ -3995,6 +4027,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 0
+    putrid: 0
+- vodka:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
     putrid: 0
 # Drinks
 
@@ -4883,12 +4923,36 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- doughnut:
+- glazed doughnut:
     sweet: 2
     sour: 0
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- apple fritter:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- boston cream donut:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- churro:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 - macaron:
@@ -6076,7 +6140,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  lemon bar:
+- lemon bar:
     sweet: 2
     sour: 1
     salty: 1
@@ -6109,9 +6173,25 @@ flavors:
     hot: 0
     putrid: 0
 - bagel with lox and cream cheese:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- sesame seed bagel:
     sweet: 0
     sour: 0
-    salty: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- poppy seed bagel:
+    sweet: 0
+    sour: 0
+    salty: 0
     bitter: 0
     savory: 1
     hot: 0
@@ -6988,6 +7068,63 @@ flavors:
     savory: 2
     hot: 2
     putrid: 0
+- blueberry quickbread muffin:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- English muffin:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- lemon poppy seed quickbread muffin:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- prune pączki:
+    sweet: 2
+    sour:
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- potato pierogi:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- saurkraut pierogi:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- cheese pierogi:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+
 # -  food:
 #     sweet: 0
 #     sour: 0
