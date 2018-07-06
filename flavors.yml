@@ -1448,6 +1448,46 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- billberry:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- bitter melon:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- dragonfruit:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- chokecherry:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- tamarillo:
+    sweet: 1
+    sour: 2
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
 # Fruits
 
 # vegetables
@@ -2075,6 +2115,22 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- burdock root:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 1
+- cattail shoot:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
 # Vegetables
 
 # Herbs and spices
@@ -2084,7 +2140,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - thyme:
     sweet: 0
@@ -2092,7 +2148,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - sage:
     sweet: 0
@@ -2100,7 +2156,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - basil:
     sweet: 1
@@ -2116,7 +2172,7 @@ flavors:
     salty: 0
     bitter: 1
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - chervil:
     sweet: 0
@@ -2124,7 +2180,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - cilantro:
     sweet: 0
@@ -2140,7 +2196,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - marjoram:
     sweet: 0
@@ -2148,7 +2204,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - rosemary:
     sweet: 0
@@ -2156,7 +2212,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - tarragon:
     sweet: 0
@@ -2164,7 +2220,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - nutmeg:
     sweet: 0
@@ -2180,7 +2236,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - cumin:
     sweet: 0
@@ -2188,7 +2244,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - allspice:
     sweet: 0
@@ -2196,15 +2252,23 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - anise seed:
-    sweet: 0
+    sweet: 1
     sour: 0
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
+    putrid: 0
+- star anise:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
     putrid: 0
 - cardamom:
     sweet: 0
@@ -2212,7 +2276,7 @@ flavors:
     salty: 0
     bitter: 0
     savory: 1
-    hot: 0
+    hot: 1
     putrid: 0
 - celery seed:
     sweet: 0
@@ -2270,7 +2334,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  lemongrass:
+- lemongrass:
     sweet: 0
     sour: 1
     salty: 0
@@ -2278,7 +2342,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
--  tumeric:
+- tumeric:
     sweet: 0
     sour: 0
     salty: 0
@@ -2286,7 +2350,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
--  ginseng:
+- ginseng:
     sweet: 0
     sour: 0
     salty: 0
@@ -2318,6 +2382,38 @@ flavors:
     savory: 1
     hot: 2
     putrid: 1
+- fenugreek:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+- sassafras:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+- sumac:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- yarrow:
+    sweet: 0
+    sour: 1
+    salty: 0
+    bitter: 2
+    savory: 0
+    hot: 0
+    putrid: 0
 # Herbs and spices
 
 # Meats and meat dishes
@@ -2817,7 +2913,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  moo shu pork:
+- moo shu pork:
     sweet: 0
     sour: 0
     salty: 1
@@ -2825,7 +2921,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  Peking duck:
+- Peking duck:
     sweet: 0
     sour: 0
     salty: 1
@@ -2833,7 +2929,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  pork roast:
+- pork roast:
     sweet: 0
     sour: 0
     salty: 1
@@ -2841,7 +2937,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  blood pudding:
+- blood pudding:
     sweet: 0
     sour: 0
     salty: 1
@@ -2849,7 +2945,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  St. Louis-style barbecue:
+- St. Louis-style barbecue:
     sweet: 1
     sour: 0
     salty: 1
@@ -2857,7 +2953,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  Pork vindaloo:
+- Pork vindaloo:
     sweet: 0
     sour: 0
     salty: 1
@@ -2865,7 +2961,7 @@ flavors:
     savory: 2
     hot: 1
     putrid: 0
--  Canadian bacon:
+- Canadian bacon:
     sweet: 0
     sour: 0
     salty: 1
@@ -2873,7 +2969,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  grilled ribeye steak:
+- grilled ribeye steak:
     sweet: 0
     sour: 0
     salty: 1
@@ -2881,7 +2977,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  tamale:
+- tamale:
     sweet: 0
     sour: 0
     salty: 1
@@ -2889,7 +2985,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  paella:
+- paella:
     sweet: 0
     sour: 0
     salty: 1
@@ -2913,7 +3009,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  pot roast:
+- pot roast:
     sweet: 0
     sour: 0
     salty: 1
@@ -2921,7 +3017,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  sukiyaki:
+- sukiyaki:
     sweet: 0
     sour: 0
     salty: 1
@@ -2929,7 +3025,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  chicken kiev:
+- chicken kiev:
     sweet: 0
     sour: 0
     salty: 1
@@ -2937,7 +3033,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  coq au vin:
+- coq au vin:
     sweet: 0
     sour: 0
     salty: 1
@@ -2945,7 +3041,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  pad thai:
+- pad thai:
     sweet: 1
     sour: 0
     salty: 1
@@ -2953,7 +3049,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  schnitzel:
+- schnitzel:
     sweet: 0
     sour: 0
     salty: 1
@@ -2961,7 +3057,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  escargot:
+- escargot:
     sweet: 0
     sour: 0
     salty: 1
@@ -2969,7 +3065,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  steak and kidney pie:
+- steak and kidney pie:
     sweet: 0
     sour: 0
     salty: 1
@@ -2977,7 +3073,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  yorkshire pudding:
+- yorkshire pudding:
     sweet: 0
     sour: 0
     salty: 1
@@ -2985,7 +3081,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  chipolata sausage:
+- chipolata sausage:
     sweet: 0
     sour: 0
     salty: 1
@@ -2993,7 +3089,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  sausage and peppers:
+- sausage and peppers:
     sweet: 1
     sour: 0
     salty: 1
@@ -3148,7 +3244,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  wasabi peas:
+- wasabi peas:
     sweet: 1
     sour: 0
     salty: 0
@@ -3156,7 +3252,7 @@ flavors:
     savory: 1
     hot: 1
     putrid: 0
--  rice crackers:
+- rice crackers:
     sweet: 1
     sour: 0
     salty: 1
@@ -3384,7 +3480,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
--  dragon milk cheese:
+- dragon milk cheese:
     sweet: 0
     sour: 0
     salty: 1
@@ -3590,7 +3686,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  deviled egg:
+- deviled egg:
     sweet: 0
     sour: 0
     salty: 1
@@ -3625,7 +3721,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  pumpernickel bread:
+- pumpernickel bread:
     sweet: 1
     sour: 0
     salty: 0
@@ -3716,7 +3812,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  caffè latte:
+- caffè latte:
     sweet: 1
     sour: 0
     salty: 0
@@ -3724,7 +3820,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  hot chocolate:
+- hot chocolate:
     sweet: 2
     sour: 0
     salty: 0
@@ -3732,7 +3828,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  butterbeer:
+- butterbeer:
     sweet: 1
     sour: 0
     salty: 0
@@ -3740,7 +3836,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  firewhisky:
+- firewhisky:
     sweet: 0
     sour: 0
     salty: 0
@@ -3748,7 +3844,7 @@ flavors:
     savory: 1
     hot: 2
     putrid: 0
--  Ogden's Old firewhisky:
+- Ogden's Old firewhisky:
     sweet: 0
     sour: 0
     salty: 0
@@ -3756,7 +3852,7 @@ flavors:
     savory: 1
     hot: 2
     putrid: 0
--  pumpkin juice:
+- pumpkin juice:
     sweet: 1
     sour: 0
     salty: 0
@@ -3764,7 +3860,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
--  lemonade:
+- lemonade:
     sweet: 1
     sour: 1
     salty: 0
@@ -3772,7 +3868,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
--  mulled mead:
+- mulled mead:
     sweet: 1
     sour: 0
     salty: 0
@@ -3780,7 +3876,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
--  espresso:
+- espresso:
     sweet: 0
     sour: 0
     salty: 0
@@ -4036,6 +4132,46 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
+- hibiscus tea:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- kombucha tea:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 1
+- root beer:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- ginger beer:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- yerba mate:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
 # Drinks
 
 # Pies
@@ -4191,7 +4327,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
--  pork pie:
+- pork pie:
     sweet: 0
     sour: 0
     salty: 1
@@ -4409,6 +4545,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- nettle soup:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
     putrid: 0
 # Soups
 
@@ -4894,6 +5038,14 @@ flavors:
     salty: 1
     bitter: 0
     savory: 1
+    hot: 0
+    putrid: 1
+- kelp:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 0
     hot: 0
     putrid: 1
 # Seafood
@@ -5593,6 +5745,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- orange creamsicle:
+    sweet: 2
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 # Desserts
@@ -7124,8 +7284,24 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- ranch dressing:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- cream:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 
-# -  food:
+# - food:
 #     sweet: 0
 #     sour: 0
 #     salty: 0
