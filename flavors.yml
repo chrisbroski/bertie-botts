@@ -3089,6 +3089,22 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- duck confit:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- turkey pastrami:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # Meats and meat dishes
 
 # Snacks
@@ -3427,6 +3443,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- cheese ravioli:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # Cheese dishes
 
 # Egg dishes
@@ -4369,6 +4393,14 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- chicken consommé:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
     putrid: 0
 # Soups
 
@@ -5529,6 +5561,14 @@ flavors:
     salty: 0
     bitter: 0
     savory: 0
+    hot: 0
+    putrid: 0
+- bread pudding:
+    sweet: 2
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
     hot: 0
     putrid: 0
 # Desserts
@@ -6987,6 +7027,14 @@ flavors:
     bitter: 0
     savory: 2
     hot: 2
+    putrid: 0
+- gnocchi:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
     putrid: 0
 # -  food:
 #     sweet: 0
