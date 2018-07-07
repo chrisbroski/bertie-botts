@@ -3185,7 +3185,23 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- duck confit:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 - Christmas goose:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- turkey pastrami:
     sweet: 0
     sour: 0
     salty: 1
@@ -3539,6 +3555,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- cheese ravioli:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # Cheese dishes
 
 # Egg dishes
@@ -4546,6 +4570,14 @@ flavors:
     savory: 1
     hot: 1
     putrid: 0
+- chicken consommé:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 - nettle soup:
     sweet: 0
     sour: 1
@@ -5355,12 +5387,12 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- strudel:
+- apple strudel:
     sweet: 2
-    sour: 0
-    salty: 0
+    sour: 1
+    salty: 1
     bitter: 0
-    savory: 0
+    savory: 1
     hot: 0
     putrid: 0
 - spotted dick:
@@ -5373,7 +5405,7 @@ flavors:
     putrid: 0
 - fruitcake:
     sweet: 2
-    sour: 0
+    sour: 1
     salty: 0
     bitter: 1
     savory: 0
@@ -5747,12 +5779,20 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- orange creamsicle:
+- bread pudding:
     sweet: 2
-    sour: 1
+    sour: 0
     salty: 1
     bitter: 0
     savory: 1
+    hot: 0
+    putrid: 0
+- orange creamsicle:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
     hot: 0
     putrid: 0
 # Desserts
@@ -7300,7 +7340,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-
+- gnocchi:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # - food:
 #     sweet: 0
 #     sour: 0
