@@ -5387,12 +5387,12 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- strudel:
+- apple strudel:
     sweet: 2
-    sour: 0
-    salty: 0
+    sour: 1
+    salty: 1
     bitter: 0
-    savory: 0
+    savory: 1
     hot: 0
     putrid: 0
 - spotted dick:
@@ -5405,7 +5405,7 @@ flavors:
     putrid: 0
 - fruitcake:
     sweet: 2
-    sour: 0
+    sour: 1
     salty: 0
     bitter: 1
     savory: 0
