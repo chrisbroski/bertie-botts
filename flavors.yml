@@ -1651,8 +1651,8 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- fennel:
-    sweet: 0
+- fennel bulb:
+    sweet: 1
     sour: 0
     salty: 0
     bitter: 0
@@ -2131,6 +2131,54 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- taro:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- cassava:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- celery root:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- lotus root:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- parsley root:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- mung bean:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
 # Vegetables
 
 # Herbs and spices
@@ -2413,6 +2461,14 @@ flavors:
     bitter: 2
     savory: 0
     hot: 0
+    putrid: 0
+- fennel seed:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
     putrid: 0
 # Herbs and spices
 
@@ -5016,15 +5072,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 2
-- Fried Calamari:
-    sweet: 0
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 1
-- Fried Calamari:
+- fried calamari:
     sweet: 0
     sour: 0
     salty: 1
@@ -6309,7 +6357,7 @@ flavors:
     hot: 0
     putrid: 0
 - enoki mushroom:
-    sweet: 0
+    sweet: 1
     sour: 0
     salty: 0
     bitter: 0
@@ -6321,9 +6369,41 @@ flavors:
     sour: 0
     salty: 0
     bitter: 0
-    savory: 0
+    savory: 1
     hot: 0
-    putrid: 0
+    putrid: 1
+- porcini mushroom:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- chanterelle musroom:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- oyster mushroom:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
+- matsutake mushroom:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 - sour cream:
     sweet: 0
     sour: 1
@@ -7348,6 +7428,46 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- oatmeal:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- gruel:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- sorghum molasses:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- black treacle:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 2
+    savory: 0
+    hot: 0
+    putrid: 0
+- sauteed morel mushrooms:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # - food:
 #     sweet: 0
 #     sour: 0
