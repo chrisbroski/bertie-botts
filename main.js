@@ -178,7 +178,7 @@ function isDisgusting(flavor) {
     var putrid = flavor.putrid,
         hot = flavor.hot,
         determination = student.attr.WD;
-    console.log(flavor);
+
     return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
 }
 
