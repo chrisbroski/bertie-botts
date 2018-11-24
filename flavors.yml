@@ -5072,15 +5072,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 2
-- Fried Calamari:
-    sweet: 0
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 1
-    hot: 0
-    putrid: 1
-- Fried Calamari:
+- fried calamari:
     sweet: 0
     sour: 0
     salty: 1

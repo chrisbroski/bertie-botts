@@ -1,7 +1,7 @@
 /* jshint esversion: 6 */
 
 var data,
-    lineCount = 0,
+    eaten = [],
     beanCount = 20,
     student = {},
     sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
@@ -143,7 +143,7 @@ function typewrite(text) {
             function () {
                 typewrite(text.slice(1));
                 document.querySelector("fieldset").scrollIntoView(false);
-            }, 20
+            }, 10
         );
     }
 }
@@ -164,6 +164,7 @@ function isDisgusting(flavor) {
     var putrid = flavor.putrid,
         hot = flavor.hot,
         determination = student.attr.WD;
+    console.log(flavor);
     return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
 }
 
@@ -173,31 +174,41 @@ function write(flavor) {
         hot = flavor[beanName].hot,
         main = document.querySelector("main"),
         text = ". It tasted like ",
-        description = desc(flavor);
+        description = desc(flavor),
+        another = "";
 
-    if (lineCount >= beanCount - 1) {
+    if (eaten.indexOf(beanName) >= 0) {
+        another = " another ";
+    }
+    eaten.push(beanName);
+
+    if (eaten.length >= beanCount) {
         main.appendChild(document.createElement("p"));
-        startwriting(`The last bean in the box was ${beanName}-flavored${description}. ${student.given} looked forward to eating more`);
+        if (isDisgusting(flavor)) {
+            startwriting(`The last bean in the box was ${beanName}-flavored${description}`);
+        } else {
+            startwriting(`The last bean in the box was ${beanName}-flavored${description}. ${student.given} looked forward to eating more`);
+        }
         showHideButtons("play");
         return;
     }
-    if (lineCount === 0) {
+    if (eaten.length === 1) {
         text = ". The first bean tasted like ";
     }
-    if (lineCount === 1) {
+    if (eaten.length === 2) {
         text = `. ${student.given} dared to try another. This one tasted like `;
     }
-    if (lineCount === 2) {
+    if (eaten.length === 3) {
         main.appendChild(document.createElement("p"));
         text = `Undeterred, ${pronoun()} dug into the box again. The next one tasted like `;
     }
-    if (lineCount === 3) {
+    if (eaten.length === 4) {
         text = `. ${student.given} tasted beans the flavor of `;
         description = "";
     }
-    if (lineCount > 3) {
+    if (eaten.length > 4) {
         text = ", ";
-        if (lineCount == beanCount - 2) {
+        if (eaten.length == beanCount - 1) {
             text = ", and ";
         }
         description = "";
@@ -210,16 +221,14 @@ function write(flavor) {
         if (student.attr.WD > high) {
             startwriting(`Ugh! That one was ${beanName}-flavored. It will be a few days before ${student.given} is ready to eat Bertie Bott's again`);
         } else if (student.attr.WD < low) {
-            startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} swears ${pronoun()} won't eat one ever again`);
+            startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} swears ${pronoun()} won't eat these ever again`);
         } else {
             startwriting(`Ugh! That one was ${beanName}-flavored. ${student.given} spit it out and is done eating Bertie Bott's for a long while`);
         }
         showHideButtons("play");
     } else {
-        startwriting(text + beanName + description);
+        startwriting(text + another + beanName + description);
     }
-
-    lineCount += 1;
 }
 
 function isMale() {
@@ -270,6 +279,7 @@ function play() {
         extra = "",
         fate;
 
+    eaten.length = 0;
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
     student.sur = data.names.sur.rand();
@@ -284,7 +294,6 @@ function play() {
     determine = lrng(fate);
 
     main.innerHTML = "";
-    lineCount = 0;
     showHideButtons("open");
 
     if (student.attr.WD < low) {
