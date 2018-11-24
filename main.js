@@ -2,6 +2,7 @@
 
 var data,
     eaten = [],
+    describedAs = [],
     beanCount = 20,
     student = {},
     sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
@@ -68,6 +69,19 @@ function showHideButtons(buttonToShow) {
     }
 }
 
+function randDesc(descriptions) {
+    var desc, descs = descriptions.filter(function (d) {
+        return describedAs.indexOf(d) < 0;
+    });
+    if (descs.length === 0) {
+        descs = descriptions;
+    }
+
+    desc = descs.rand();
+    describedAs.push(desc);
+    return desc;
+}
+
 function desc(flavor) {
     var tastes = flavor[Object.keys(flavor)[0]];
     var tot = total(flavor);
@@ -79,7 +93,7 @@ function desc(flavor) {
         return ". It burned " + possessive() + " mouth";
     }
     if (tastes.sweet > 1) {
-        return [". It was very sweet", ". It was quite sweet"].rand();
+        return randDesc([". It was very sweet", ". It was quite sweet"]);
     }
     if (tastes.sour > 1) {
         return ". " + possessive(true) + " face puckered at how sour it was";
@@ -91,7 +105,7 @@ function desc(flavor) {
         return ". It was terribly too salty";
     }
     if (tastes.savory > 1) {
-        return [". It was quite good", ". Mmm, that was satisfyingly savory"].rand();
+        return randDesc([". It was quite good", ". Mmm, that was satisfyingly savory"]);
     }
 
     if (total > 4) {
@@ -101,7 +115,7 @@ function desc(flavor) {
         return [". It was pleasingly tangy", ". Tangy"].rand();
     }
     if (tastes.putrid > 0) {
-        return [". A little weird, but OK", ". It was a bit funky-tasting"].rand();
+        return randDesc([". A little weird, but OK", ". It was a bit funky-tasting"]);
     }
     if (tastes.hot > 0) {
         return ". It was mildly spicy";
@@ -126,7 +140,7 @@ function desc(flavor) {
         return ". It was surprisingly bland";
     }
 
-    return [". It was OK", ". Meh"].rand();
+    return randDesc([". It was OK", ". Meh"]);
 }
 
 function typewrite(text) {
@@ -280,6 +294,7 @@ function play() {
         fate;
 
     eaten.length = 0;
+    describedAs.length = 0;
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
     student.sur = data.names.sur.rand();
