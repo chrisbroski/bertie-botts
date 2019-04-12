@@ -175,8 +175,9 @@ function chooseBean() {
 }
 
 function isDisgusting(flavor) {
-    var putrid = flavor.putrid,
-        hot = flavor.hot,
+    var beanName = Object.keys(flavor)[0],
+        putrid = flavor[beanName].putrid,
+        hot = flavor[beanName].hot,
         determination = student.attr.WD;
 
     return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
@@ -329,6 +330,20 @@ function setHouse() {
 
     html.className = (className) ? className.slice(1) : "";
 }
+
+// Testing tools
+function showDebug() {
+    if (location.search === "?debug") {
+        document.querySelector("#debug").style.display = "block";
+        document.querySelector("aside pre").textContent = JSON.stringify(student, null, "  ");
+    }
+}
+
+function testFlavor(flavorName) {
+    write(data[flavorName]);
+}
+
+// Page-level events
 window.onhashchange = setHouse;
 window.onload = function () {
     var xhr = new XMLHttpRequest();
@@ -348,6 +363,7 @@ window.onload = function () {
             data.names = JSON.parse(xhr2.response);
             play();
             document.getElementById("open").style.display = "inline-block";
+            showDebug();
         };
         xhr2.send();
     };
