@@ -339,8 +339,8 @@ function showDebug() {
     }
 }
 
-function testFlavor(flavorName) {
-    write(data[flavorName]);
+function testFlavor(flavorIndex) {
+    write(data.flavors[flavorIndex]);
 }
 
 // Page-level events
