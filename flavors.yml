@@ -5128,6 +5128,14 @@ flavors:
     savory: 0
     hot: 0
     putrid: 1
+- Gefilte Fish:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # Seafood
 
 # Desserts
@@ -5843,6 +5851,23 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
+- chocolate babka:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 0
+    putrid: 0
+- cinnamon babka:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+
 # Desserts
 
 # Salads
@@ -7468,6 +7493,46 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+- potato knish:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- cheese blintz with strawberries:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- noodle kugel:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- potato latke:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- shakshuka:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
 # - food:
 #     sweet: 0
 #     sour: 0
