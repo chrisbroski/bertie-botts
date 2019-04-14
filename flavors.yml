@@ -2809,7 +2809,7 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
-- chicken tikka:
+- chicken tikka masala:
     sweet: 0
     sour: 0
     salty: 1
@@ -3892,6 +3892,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- matcha tea:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 - caffè latte:
     sweet: 1
     sour: 0
@@ -4052,6 +4060,14 @@ flavors:
     savory: 0
     hot: 1
     putrid: 1
+- mulled wine:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
 - beetle berry whisky:
     sweet: 0
     sour: 0
@@ -4220,6 +4236,22 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
+- chamomile tea:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- boba tea:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 - kombucha tea:
     sweet: 1
     sour: 1
@@ -4244,7 +4276,7 @@ flavors:
     savory: 0
     hot: 1
     putrid: 0
-- yerba mate:
+- yerba mate tea:
     sweet: 1
     sour: 0
     salty: 0
@@ -7532,6 +7564,22 @@ flavors:
     bitter: 0
     savory: 2
     hot: 1
+    putrid: 0
+- bibimbap:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- pickled egg:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
     putrid: 0
 # - food:
 #     sweet: 0

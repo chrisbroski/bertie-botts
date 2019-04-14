@@ -344,8 +344,8 @@ function play() {
     describedAs.length = 0;
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
-    student.sur = data.names.sur.rand();
-    student.given = data.names[student.gender].rand();
+    student.sur = data.names.magic.sur.rand();
+    student.given = data.names.magic[student.gender].rand();
     student.attr = {};
     student.attr.WD = attVal();
 
@@ -399,14 +399,14 @@ window.onload = function () {
     }
     setHouse();
 
-    xhr.open("GET", "flavors.json");
+    xhr.open("GET", "flavors.json?v2");
     xhr.onload = function () {
         data = JSON.parse(xhr.response);
 
         var xhr2 = new XMLHttpRequest();
-        xhr2.open("GET", "names.json");
+        xhr2.open("GET", "names.json?v2");
         xhr2.onload = function () {
-            data.names = JSON.parse(xhr2.response);
+            data.names = JSON.parse(xhr2.response).names;
             play();
             document.getElementById("open").style.display = "inline-block";
             showDebug();
