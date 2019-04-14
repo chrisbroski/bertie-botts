@@ -87,60 +87,106 @@ function desc(flavor) {
     var tot = total(flavor);
 
     if (tastes.putrid > 1) {
-        return ". It was the worst thing " + pronoun() + "'d even tasted";
+        return randDesc([
+            ". It was the worst thing " + pronoun() + "'d even tasted",
+            ". Ugh, gross"
+        ]);
     }
     if (tastes.hot > 1) {
-        return ". It burned " + possessive() + " mouth";
+        return randDesc([
+            ". It burned " + possessive() + " mouth",
+            ". Ouch! That was hot",
+            ". Ow! Too spicy"
+        ]);
     }
     if (tastes.sweet > 1) {
-        return randDesc([". It was very sweet", ". It was quite sweet"]);
+        return randDesc([
+            ". It was very sweet",
+            ". It was quite sweet",
+            ". " + possessive(true) + " teeth hurt from how sweet it was",
+            ". It was cloyingly sweet"
+        ]);
     }
     if (tastes.sour > 1) {
-        return ". " + possessive(true) + " face puckered at how sour it was";
+        return randDesc([
+            ". " + possessive(true) + " face puckered at how sour it was",
+            ". Whoa! That was sour"
+        ]);
     }
     if (tastes.bitter > 1) {
         return ". It was unpleasantly bitter";
     }
     if (tastes.salty > 1) {
-        return ". It was terribly too salty";
+        return ". It was terribly salty";
     }
     if (tastes.savory > 1) {
-        return randDesc([". It was quite good", ". Mmm, that was satisfyingly savory"]);
+        return randDesc([
+            ". It was quite good",
+            ". Mmm, that was satisfyingly savory"
+        ]);
     }
 
     if (total > 4) {
         return ". It was extremely flavorful";
     }
     if (tastes.sweet > 0 && tastes.sour > 0) {
-        return [". It was pleasingly tangy", ". Tangy"].rand();
+        return randDesc([
+            ". It was pleasingly tangy",
+            ". Tangy",
+            ". Ooo, tangy"
+        ]);
     }
     if (tastes.putrid > 0) {
-        return randDesc([". A little weird, but OK", ". It was a bit funky-tasting"]);
+        return randDesc([
+            ". A little weird, but OK",
+            ". It was a bit funky-tasting",
+            ", It was... interesting"
+        ]);
     }
     if (tastes.hot > 0) {
-        return ". It was mildly spicy";
+        return randDesc([
+            ". It was mildly spicy",
+            ". A bit spicy"
+        ]);
     }
     if (tastes.sour > 0) {
-        return ". It was a bit tart";
+        return randDesc([
+            ". It was a bit tart",
+            ". It was as little sour, but not too bad"
+        ]);
     }
     if (tastes.bitter > 0) {
         return ". It was slightly bitter";
     }
     if (tastes.savory > 0) {
-        return ". It was not too bad";
+        return randDesc([
+            ". It was not bad at all",
+            ". Mm, that was not unpleasant"
+        ]);
     }
     if (tastes.sweet > 0) {
-        return ". It was mildly sweet";
+        return randDesc([
+            ". It was mildly sweet",
+            ". It tasted pleasantly sweet"
+        ]);
     }
     if (tastes.salty > 0) {
         return ". Salty";
     }
 
     if (total === 0) {
-        return ". It was surprisingly bland";
+        return randDesc([
+            ". It was surprisingly bland",
+            ". It tasted like... nothing"
+        ]);
     }
 
-    return randDesc([". It was OK", ". Meh"]);
+    return randDesc([
+        ". It was OK",
+        ". Meh",
+        ". It was something",
+        ". " + pronoun() + " has tasted worse things"
+    ]);
 }
 
 function typewrite(text) {
@@ -175,8 +221,9 @@ function chooseBean() {
 }
 
 function isDisgusting(flavor) {
-    var putrid = flavor.putrid,
-        hot = flavor.hot,
+    var beanName = Object.keys(flavor)[0],
+        putrid = flavor[beanName].putrid,
+        hot = flavor[beanName].hot,
         determination = student.attr.WD;
 
     return (putrid > 1 || (determination < low && (putrid > 0 || hot > 1)));
@@ -297,8 +344,8 @@ function play() {
     describedAs.length = 0;
     student.gender = ["male", "female"].rand();
     beanCount = [10, 20, 20, 50, 100].rand();
-    student.sur = data.names.sur.rand();
-    student.given = data.names[student.gender].rand();
+    student.sur = data.names.magic.sur.rand();
+    student.given = data.names.magic[student.gender].rand();
     student.attr = {};
     student.attr.WD = attVal();
 
@@ -329,6 +376,20 @@ function setHouse() {
 
     html.className = (className) ? className.slice(1) : "";
 }
+
+// Testing tools
+function showDebug() {
+    if (location.search === "?debug") {
+        document.querySelector("#debug").style.display = "block";
+        document.querySelector("aside pre").textContent = JSON.stringify(student, null, "  ");
+    }
+}
+
+function testFlavor(flavorIndex) {
+    write(data.flavors[flavorIndex]);
+}
+
+// Page-level events
 window.onhashchange = setHouse;
 window.onload = function () {
     var xhr = new XMLHttpRequest();
@@ -338,16 +399,17 @@ window.onload = function () {
     }
     setHouse();
 
-    xhr.open("GET", "flavors.json");
+    xhr.open("GET", "flavors.json?v2");
     xhr.onload = function () {
         data = JSON.parse(xhr.response);
 
         var xhr2 = new XMLHttpRequest();
-        xhr2.open("GET", "names.json");
+        xhr2.open("GET", "names.json?v2");
         xhr2.onload = function () {
-            data.names = JSON.parse(xhr2.response);
+            data.names = JSON.parse(xhr2.response).names;
             play();
             document.getElementById("open").style.display = "inline-block";
+            showDebug();
         };
         xhr2.send();
     };
