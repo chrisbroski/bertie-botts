@@ -6204,7 +6204,7 @@ flavors:
     bitter: 0
     savory: 0
     hot: 0
-    putrid: 1
+    putrid: 2
 - ginger newt:
     sweet: 2
     sour: 0
