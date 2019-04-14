@@ -1979,12 +1979,12 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- collard green:
+- collard greens with bacon:
     sweet: 0
     sour: 0
-    salty: 0
+    salty: 1
     bitter: 1
-    savory: 0
+    savory: 1
     hot: 0
     putrid: 0
 -  daikon radish:
@@ -2498,6 +2498,14 @@ flavors:
     hot: 0
     putrid: 0
 - fried chicken:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- chicken-fried steak:
     sweet: 0
     sour: 0
     salty: 1
@@ -5168,6 +5176,14 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
+- fried catfish:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 1
 # Seafood
 
 # Desserts
@@ -7576,6 +7592,54 @@ flavors:
 - pickled egg:
     sweet: 0
     sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- hominy grits:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- cajun shrimp and grits:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 1
+- hushpuppies:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- fried green tomatoes:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- texas-style barbebcued brisket:
+    sweet: 1
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- sweet potato fries:
+    sweet: 1
+    sour: 0
     salty: 1
     bitter: 0
     savory: 1
