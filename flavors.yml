@@ -832,7 +832,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- acerola fruit:
+- acerola:
     sweet: 1
     sour: 2
     salty: 0
@@ -880,7 +880,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- carambola fruit:
+- carambola:
     sweet: 1
     sour: 1
     salty: 0
@@ -888,7 +888,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- cherimoya fruit:
+- cherimoya:
     sweet: 1
     sour: 1
     salty: 0
@@ -904,7 +904,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- date fruit:
+- date:
     sweet: 1
     sour: 1
     salty: 0
@@ -912,7 +912,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- durian fruit:
+- durian:
     sweet: 2
     sour: 0
     salty: 0
@@ -928,7 +928,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- feijoa fruit:
+- feijoa:
     sweet: 1
     sour: 1
     salty: 0
@@ -984,7 +984,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 1
-- jambolan fruit:
+- jambolan:
     sweet: 1
     sour: 1
     salty: 0
@@ -992,7 +992,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- jujube fruit:
+- jujube:
     sweet: 1
     sour: 1
     salty: 0
@@ -1024,7 +1024,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- longan fruit:
+- longan:
     sweet: 1
     sour: 1
     salty: 0
@@ -1032,7 +1032,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- lychee fruit:
+- lychee:
     sweet: 1
     sour: 1
     salty: 0
@@ -1056,7 +1056,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- purple mangosteen fruit:
+- purple mangosteen:
     sweet: 1
     sour: 1
     salty: 0
@@ -1120,7 +1120,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- pitanga fruit:
+- pitanga:
     sweet: 1
     sour: 2
     salty: 0
@@ -1176,7 +1176,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- pummelo fruit:
+- pummelo:
     sweet: 1
     sour: 1
     salty: 0
@@ -1224,7 +1224,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- sapodilla fruit:
+- sapodilla:
     sweet: 1
     sour: 1
     salty: 0
@@ -1232,7 +1232,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- mamey sapote fruit:
+- mamey sapote:
     sweet: 1
     sour: 1
     salty: 0
@@ -1240,7 +1240,7 @@ flavors:
     savory: 0
     hot: 0
     putrid: 0
-- soursop fruit:
+- soursop:
     sweet: 1
     sour: 2
     salty: 0
