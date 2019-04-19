@@ -185,7 +185,7 @@ function desc(flavor) {
         ". It was OK",
         ". Meh",
         ". It was something",
-        ". " + pronoun() + " has tasted worse things"
+        ". " + pronoun(true) + " had tasted worse things"
     ]);
 }
 
