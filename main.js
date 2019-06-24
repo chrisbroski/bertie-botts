@@ -140,7 +140,7 @@ function desc(flavor) {
         return randDesc([
             ". A little weird, but OK",
             ". It was a bit funky-tasting",
-            ", It was... interesting"
+            ". It was... interesting"
         ]);
     }
     if (tastes.hot > 0) {
