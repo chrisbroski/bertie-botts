@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/chrisbroski/bertie-botts#readme",
   "dependencies": {
-    "js-yaml": "latest"
+    "js-yaml": "^3.13.1"
   }
 }
