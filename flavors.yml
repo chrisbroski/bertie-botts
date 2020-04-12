@@ -7886,6 +7886,14 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
+- salad cream:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
 # - food:
 #     sweet: 0
 #     sour: 0
