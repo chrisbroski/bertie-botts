@@ -6,8 +6,8 @@ var data,
     beanCount = 20,
     student = {},
     sizes = {"10": "tiny", "20": "small", "50": "", "100": "large"},
-    low = 28,
-    high = 43,
+    low = 29,
+    high = 42,
     determine; // For deterministic "random"
 
 function rand(max) {
@@ -323,8 +323,23 @@ function end() {
     showHideButtons("play");
 }
 
+function boxMuller() {
+    var x = 0, y = 0, rds, c;
+
+    do {
+        x = Math.random() * 2 - 1;
+        y = Math.random() * 2 - 1;
+        rds = x * x + y * y;
+    }
+    while (rds == 0 || rds > 1);
+
+    c = Math.sqrt(-2 * Math.log(rds) / rds);
+    return [x * c, y * c];
+}
+
 function attVal() {
-    return Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 14) + Math.ceil(Math.random() * 15) + 4;
+    // return Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 15) + Math.ceil(Math.random() * 14) + Math.ceil(Math.random() * 15) + 4;
+    return Math.round(boxMuller()[0] * 6.5 + 35.5);
 }
 
 function save() {

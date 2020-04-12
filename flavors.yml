@@ -6147,8 +6147,8 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
-- tagliatelle bolognese:
-    sweet: 0
+- bolognese ragù:
+    sweet: 1
     sour: 0
     salty: 1
     bitter: 0
@@ -7806,7 +7806,7 @@ flavors:
     savory: 1
     hot: 1
     putrid: 0
-- Sriracha sauce:
+- cock sauce:
     sweet: 2
     sour: 0
     salty: 1
@@ -7853,6 +7853,46 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- stromboli:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+- Hawiian pizza:
+    sweet: 2
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- pizza margherita:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- steak diane:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- salad cream:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
     putrid: 0
 # - food:
 #     sweet: 0
