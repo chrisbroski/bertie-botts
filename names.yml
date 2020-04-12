@@ -23,6 +23,7 @@ names:
         - Arkham
         - Avery
         - Babbling
+        - Baggins
         - Bagman
         - Bagnell
         - Bagnold
@@ -64,6 +65,7 @@ names:
         - Bradley
         - Bragge
         - Braithwaite
+        - Brandybuck
         - Branstone
         - Broadmoor
         - Brocklehurst
@@ -154,6 +156,7 @@ names:
         - Elphick
         - Elwood
         - Entwistle
+        - Evenstar
         - Everard
         - Evercreech
         - Fairbourne
@@ -633,6 +636,7 @@ names:
         - Toke
         - Tolipan
         - Tonks
+        - Took
         - Toothill
         - Toots
         - Towler
@@ -750,7 +754,6 @@ names:
         - Apollo
         - Apollonius
         - Aquila
-        - Aragorn
         - Archibald
         - Arcturus
         - Arcus
@@ -759,7 +762,6 @@ names:
         - Arkie
         - Arnold
         - Arsenius
-        - Artemis
         - Arthur
         - Asgard
         - Asgeir
@@ -784,6 +786,7 @@ names:
         - Bernie
         - Bertie
         - Bertram
+        - Bilbo
         - Bilius
         - Bill
         - Blaise
@@ -812,6 +815,7 @@ names:
         - Chauncey
         - Chroniculus
         - Cicero
+        - Ciceron
         - Clay
         - Conrad
         - Corin
@@ -885,6 +889,7 @@ names:
         - Fornax
         - Fred
         - Frey
+        - Frodo
         - Fulbert
         - Gaius
         - Galen
@@ -980,6 +985,7 @@ names:
         - Marius
         - Maynard
         - Maximillian
+        - Meriadoc
         - Merlin
         - Merton
         - Merwyn
@@ -1078,7 +1084,6 @@ names:
         - Samson
         - Scorpius
         - Seamus
-        - Sean
         - Sebastian
         - Secundus
         - Sedley
@@ -1111,7 +1116,6 @@ names:
         - Torvald
         - Trevor
         - Tristan
-        - Troy
         - Tybalt
         - Ulysses
         - Uric
@@ -1185,6 +1189,7 @@ names:
         - Ariel
         - Ariella
         - Artemis
+        - Arwen
         - Asma
         - Asterope
         - Astoria
@@ -1198,6 +1203,7 @@ names:
         - Bathsheda
         - Beatrix
         - Begonia
+        - Belladonna
         - Bellatrix
         - Bellona
         - Belvina
@@ -1304,6 +1310,7 @@ names:
         - Freya
         - Frigga
         - Gabrielle
+        - Galadriel
         - Galatea
         - Gemma
         - Gerda
@@ -1372,24 +1379,18 @@ names:
         - Ivy
         - Jade
         - Jadzia
-        - Jean
-        - Jennifer
-        - Jenny
         - Jocasta
         - Jocelind
         - Jocunda
         - Joscelind
         - Julia
         - Juliana
-        - Julie
         - Juliet
         - Juno
-        - Karen
         - Karla
         - Katherine
         - Kathleen
         - Kendra
-        - Kirsten
         - Kitty
         - Kylie
         - Latisha
@@ -1403,6 +1404,7 @@ names:
         - Lenore
         - Leona
         - Leopoldina
+        - Leta
         - Leto
         - Libra
         - Lillian
@@ -1862,6 +1864,7 @@ names:
         - Henry
         - Charles
         - Toby
+        - Troy
         female:
         - Emily
         - Ellie
