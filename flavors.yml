@@ -3611,14 +3611,6 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- fettucini alfredo:
-    sweet: 0
-    sour: 0
-    salty: 1
-    bitter: 0
-    savory: 2
-    hot: 0
-    putrid: 0
 - Welsh rarebit:
     sweet: 0
     sour: 0
@@ -6139,6 +6131,14 @@ flavors:
 # Salads
 
 # Pasta
+- fettucini alfredo:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
 - linguine with clam sauce:
     sweet: 0
     sour: 0
@@ -6149,7 +6149,7 @@ flavors:
     putrid: 1
 - bolognese ragù:
     sweet: 1
-    sour: 0
+    sour: 1
     salty: 1
     bitter: 0
     savory: 1
@@ -6195,7 +6195,47 @@ flavors:
     savory: 2
     hot: 0
     putrid: 0
-# Pasta
+- bucatini all'Amatriciana:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 1
+- spaghetti and meatballs:
+    sweet: 1
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 0
+    putrid: 0
+- pasta primavera:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- spaghetti aglio e olio:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 2
+    hot: 1
+    putrid: 0
+- cacio e pepe:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 1
+#
 
 # miscellaneous
 - cat food:
@@ -7892,6 +7932,14 @@ flavors:
     salty: 1
     bitter: 0
     savory: 1
+    hot: 0
+    putrid: 0
+- saltimbocca:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 2
     hot: 0
     putrid: 0
 # - food:
