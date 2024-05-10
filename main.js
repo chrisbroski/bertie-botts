@@ -167,7 +167,7 @@ function desc(flavor) {
     if (tastes.sweet > 0) {
         return randDesc([
             ". It was mildly sweet",
-            ". It tasted pleasantly sweet"
+            ". It was pleasantly sweet"
         ]);
     }
     if (tastes.salty > 0) {

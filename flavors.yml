@@ -7934,13 +7934,37 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- saltimbocca:
-    sweet: 0
+- rambutan:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- pepino melon:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- beef liver and onions:
+    sweet: 1
     sour: 0
     salty: 1
     bitter: 0
-    savory: 2
+    savory: 1
     hot: 0
+    putrid: 1
+- gin martini:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 1
     putrid: 0
 # - food:
 #     sweet: 0
