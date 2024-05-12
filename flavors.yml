@@ -3576,7 +3576,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 1
-- Sardinian maggot cheese:
+- Sardinian maggot cheese (casu martzu):
     sweet: 0
     sour: 0
     salty: 1
@@ -6024,7 +6024,7 @@ flavors:
     savory: 1
     hot: 0
     putrid: 0
-- michgan salad:
+- Michgan salad:
     sweet: 1
     sour: 1
     salty: 1
@@ -7965,6 +7965,126 @@ flavors:
     bitter: 0
     savory: 1
     hot: 1
+    putrid: 0
+- crumpets:
+    sweet: 0
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- Manhattan cocktail:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+- old fashioned cocktail:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+- espresso martini:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 1
+    savory: 0
+    hot: 1
+    putrid: 0
+- piña colada:
+    sweet: 2
+    sour: 0
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- mojito:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- negroni:
+    sweet: 1
+    sour: 0
+    salty: 0
+    bitter: 2
+    savory: 0
+    hot: 0
+    putrid: 0
+- Aperol spritz:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- mai tai:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 1
+    hot: 0
+    putrid: 0
+- daiquiri:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- strawberry daiquiri:
+    sweet: 2
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 0
+    putrid: 0
+- whiskey sour:
+    sweet: 1
+    sour: 1
+    salty: 0
+    bitter: 0
+    savory: 0
+    hot: 1
+    putrid: 0
+- bloody mary:
+    sweet: 0
+    sour: 1
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 2
+    putrid: 0
+- dirty martini:
+    sweet: 0
+    sour: 0
+    salty: 2
+    bitter: 0
+    savory: 1
+    hot: 1
+    putrid: 0
+- pot stickers:
+    sweet: 0
+    sour: 0
+    salty: 1
+    bitter: 0
+    savory: 1
+    hot: 0
     putrid: 0
 # - food:
 #     sweet: 0
