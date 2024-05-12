@@ -7888,7 +7888,7 @@ flavors:
     putrid: 0
 - balsamic vinegar:
     sweet: 1
-    sour: 2
+    sour: 1
     salty: 1
     bitter: 0
     savory: 1
@@ -7903,7 +7903,7 @@ flavors:
     hot: 1
     putrid: 0
 - Hawiian pizza:
-    sweet: 2
+    sweet: 1
     sour: 1
     salty: 1
     bitter: 0
